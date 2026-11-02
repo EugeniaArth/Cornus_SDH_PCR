@@ -1,0 +1,40 @@
+Accession	Species	Common_name	GeneID
+AAF08579	Arabidopsis thaliana	Arabidopsis	AtSDH
+Brara.E03289.1	Brassica rapa (Br)	Field mustard)	BrapaQDH
+GSBRNA2T00027085001 (A0A078GDT9)	Brassica napus (Bn)	Rapeseed	BnapusQDH
+BBL52470	Eucalyptus camaldulensis 	Eucalyptus	EcDQD/SDH1
+BBL52471	Eucalyptus camaldulensis 		EcDQD/SDH2
+BBL52472	Eucalyptus camaldulensis 		EcDQD/SDH3
+BBL52473	Eucalyptus camaldulensis 		EcDQD/SDH4a (QDH)
+BBL52474	Eucalyptus camaldulensis 		EcDQD/SDH4b (QDH)
+Eucgr.J00263.6	Eucalyptus grandis	Eucalyptus	EgSDH1
+Eucgr.H04428.1	Eucalyptus grandis		EgSDH2
+Eucgr.H04427.1	Eucalyptus grandis		EgSDH3
+Eucgr.H01214.1	Eucalyptus grandis		EgQDH1
+Eucgr.B01770.2	Eucalyptus grandis		EgQDH2
+XP_004302480	Fragaria vesca	Strawberry	FvSDH1
+XP_004302479	Fragaria vesca		FvSDH2
+XP_004289250	Fragaria vesca		FvSDH3
+XP_004288087	Fragaria vesca		FvSDH4
+AAW65140	Juglans regia	Walnut	JrSDH
+AAS90325	Nicotiana tabacum	Tobacco	NtSDH1
+AAS90324	Nicotiana tabacum		NtSDH2
+Potri.010G019000.2	Populus trichocarpa	Poplar	DQD/SDH1 (Poptr1)
+Potri.013G029900.2	Populus trichocarpa		QDH1 (Poptr2)
+Potri.005G043400.1	Populus trichocarpa		QDH2 (Poptr3)
+Potri.014G135500.3	Populus trichocarpa		QDH3 (Poptr4)
+Potri.013G029800.1	Populus trichocarpa		DQD/SDH2 (Poptr5)
+AAC17991	Solanum lycopersicum	Tomato	SlSDH1
+Solyc10g038080.1.1	Solanum lycopersicum		SlQDH
+VIT_205s0020g02030.2	Vitis vinifera	Grapevine	VvSDH1
+VIT_214s0030g00670.2	Vitis vinifera		VvSDH2
+VIT_214s0030g00660.1	Vitis vinifera		VvSDH3
+VIT_214s0030g00650.2	Vitis vinifera		VvSDH4
+AIZ93902	Camellia sinensis	Tea plant	CasSDH1
+AJA40947	Camellia sinensis		CasSDH2
+AJA40948	Camellia sinensis		CasSDH3
+AYP64306	Camellia sinensis	Tea plant	CsDQD/SDHa
+AYP64307	Camellia sinensis		CsDQD/SDHb
+AYP64308	Camellia sinensis		CsDQD/SDHc
+AYP64309	Camellia sinensis		CsDQD/SDHd
+Habashi, R., Hacham, Y., Dhakarey, R., Matityahu, I., Holland, D., Tian, L., & Amir, R. (2019). Elucidating the role of shikimate dehydrogenase in controlling the production of anthocyanins and hydrolysable tannins in the outer peels of pomegranate. BMC plant biology, 19(1), 476.	Punica granatum	Pomegranate	PgSDH1 

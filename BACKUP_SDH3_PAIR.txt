@@ -1,0 +1,35 @@
+# Backup CserDQD/SDH3 primer pair – zero competent foreign sites
+
+**Reason:** The original SDH3 pair (`TGGAGCCGACATTGTGAAGA` / `TGACCGACAGGCTTTCCAAT`) has competent near‑matches on SDH4 (300 bp, 3+3 mismatches, 7/8‑nt 3′‑runs) and SDH2 (309 bp, 3+4 mismatches, 7/5‑nt 3′‑runs). Under permissive annealing conditions this could cause cross‑amplification.
+
+**Backup pair (recommended):**
+- Forward: CACCCAGAAGAAGGGATGGT
+- Reverse: GCAGACTCTCTCTTATGCGT
+- Position on SDH3 (1‑based): 1552‑1571 (CDS) / 1832‑1851 (CDS)
+- GC: 55 % / 50 %
+- Tm (SantaLucia NN, 250 nM, 50 mM Na⁺): 54.7 °C / 53.4 °C
+- ΔTm: 1.3 °C
+- Amplicon size: 300 bp (identical to original SDH3 product)
+
+**Safety features:**
+- Zero competent foreign sites (≤6 mismatches with ≥5‑nt perfect 3′‑run) on any other transcript.
+- Zero very‑permissive foreign sites (≤8 mismatches with ≥3‑nt 3′‑run).
+- All‑CDS location (no UTR‑junction ambiguity).
+- Same multiplex ladder position (300 bp) – no change in gel pattern.
+- Compatible with 55–58 °C annealing window.
+
+**Verification:**
+The backup pair was swapped into the 6‑plex and re‑checked exhaustively:
+- Six curated transcripts: zero cross‑products under strict/competent/long‑anchor rules.
+- Whole transcriptome: zero off‑family products under any rule (≤8 mm, any 3′‑run).
+- On‑family mismatched products: 0 (under competent rule).
+
+**Usage:**
+Replace `CserDQD_SDH3_Fwd` and `CserDQD_SDH3_Rev` in `FINAL_primers.fasta` with the sequences above, or order them separately. Experimental validation (single‑plex PCR, sequencing) is still recommended.
+
+**Files:**
+- `SDH3_backup_candidates.fasta` (in `backup/primer_blast_check/`) contains multiple backup candidates.
+- `SDH3_BACKUP_REPORT.md` (in `backup/primer_blast_check/`) provides detailed ranking.
+- `SDH3_BACKUP_VERIFY.md` (in `backup/primer_blast_check/`) shows verification results.
+
+**Note:** The remaining cross‑pair exact match (F_SDH1.2 + R_SDH1.1 → 314 bp band on SDH1.2) is already present in the original 6‑plex; swapping SDH3 does not introduce new ones.
