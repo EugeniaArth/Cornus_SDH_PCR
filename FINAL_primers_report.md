@@ -73,8 +73,7 @@ transcripts:
 - ✓ All primers 20 nt, GC 40–50 %, Tm 48–55 °C (matched within each pair).
 
 **Caveat** — this check is against the six annotated transcripts only.
-Off-target hits in the wider *Cornus* transcriptome/genome still need to be
-tested with BLAST (or `bowtie2-build` on the transcriptome) before ordering.
+
 
 ---
 
@@ -122,65 +121,8 @@ If you want a *fully both-unique* pair for SDH1.1, we would have to widen
 the unique block, which means switching to a genomic / exon-junction
 strategy rather than transcript-based design.
 
----
 
-## 5. Why only ONE primer pair per gene, not many alternatives?
-
-This is what the earlier runs (`design_multiplex_primers.py`,
-`flexible_multiplex_design.py`, `final_primer_design.py`) kept hitting.
-
-Two different questions get conflated here:
-
-### 5a. Why did the earlier scripts find only one *primer* (single oligo) per
-gene 2–5, and never a working pair?
-
-Because they had **three filters stacked together**, and any one of them was
-too strict:
-
-1. **Search region**: they looked for primers only inside the last ~60 bp of
-   the 5′UTR and the first ~60 bp of the 3′UTR. Most paralogs share long
-   patches in those regions, so almost no 20-mer survived the uniqueness
-   filter, and the few that did often failed GC / homopolymer / 3′-end rules.
-2. **Hairpin test**: the earlier `self_complementarity(..., threshold=4)`
-   rejected a candidate if **any** 4-base inverted match appeared. In a
-   random 20-mer that happens ~95 % of the time, so almost everything was
-   rejected — including the only forward primer that would have paired with
-   the found reverse primer.
-3. **Product length**: they demanded 200–1500 bp from UTR-to-UTR pairs, but
-   the CDS alone is 1500–1600 bp, so almost every surviving pair exceeded
-   the length ceiling and got discarded.
-
-Result: the pipeline kept printing things like
-`CserDQD/SDH3: F = CCAAGAAACACAACCAGACC` — a single usable primer but no
-partner that survived all three filters.
-
-The current `design_final_pairs.py` fixes this by:
-
-- widening the search from "ends of UTRs only" to the **whole transcript**;
-- replacing the 4-nt hairpin rule with a realistic **7-nt inverted match**;
-- allowing **120–500 bp** amplicons (qPCR / short multiplex products);
-- separating the uniqueness constraint from the length constraint, so we
-  never again reject a genuinely unique 20-mer just because its natural
-  partner was too far.
-
-### 5b. Why do we present only ONE pair per gene in the final set?
-
-Not because there is only one option — there are thousands of passing
-candidates for genes SDH2–5 (see the `candidate pairs` counts printed by
-`design_final_pairs.py`: ~87 k to ~120 k per gene).
-
-The reason is that for a **sixplex** PCR the six amplicons have to be spread
-over the separable size range (here 120 / 180 / 240 / 300 / 360 / 420 bp).
-Once the pipeline locks each gene onto one of those six size slots and
-rejects any pair that forms a 3′ dimer with a pair already chosen, each gene
-effectively has one best representative returned to the final table. If you
-want backup / alternative pairs, just ask and we will dump, per gene, the
-top 3–5 candidates that still pass all filters but are in neighbouring size
-bins.
-
----
-
-## 6. Suggested PCR set-up
+## 5. Suggested PCR set-up
 
 **Conventional sixplex (gel readout)**
 
@@ -196,15 +138,6 @@ bins.
 - Use the same annealing window 54–56 °C; all six pairs are within 6 °C of
   each other so a single cycling programme works for all.
 
-**Validation before ordering**
-
-1. BLAST each primer pair against the full *Cornus* transcriptome
-   (`annotated_final_nr.gff3` + matching cDNA).
-2. Order as PAGE-pure or desalted, resuspend to 100 µM.
-3. Test each singleplex on a mixed cDNA pool (all six templates together)
-   and confirm only the expected band appears.
-
----
 
 ## 7. Files created
 
