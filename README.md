@@ -56,10 +56,9 @@ python3 -m pip install numpy            # the only non-stdlib requirement
 ./scripts/run_all.sh                    # adds stage 5 and the transcriptome-wide Checks 2, 3, 3b
 ```
 
-The transcriptome-wide work reads the assembly from `data/external/`, which is not committed, so
-a fresh clone needs those files placed there first — see `data/external/README.md` for names and
-symlink commands. Those scripts stop with a clear message when a file is absent instead of
-producing a partial result.
+NB!!! The transcriptome-wide work reads the assembly needs to be downloaded from
+https://drive.google.com/drive/folders/1aDozkY-kDjnAsJzh3PdtklgKbpfJFE5D?usp=sharing
+to`data/external/`, which is not committed
 
 Runs 1-4 of the pipeline need only what is committed in `data/raw/`. Each script also works on its
 own; they are in `scripts/step1_inputs/` … `scripts/step5_sdh3_backup/`.
@@ -70,7 +69,7 @@ working directory, and the folder can be moved or cloned anywhere without editin
 ## Reproducing the deliverable
 
 `design_final_pairs.py` regenerates `FINAL_primers.fasta` and `FINAL_primer_pairs.tsv` byte for
-byte from `data/raw/DQD_SDH_possible_nt.fasta` plus the verified coordinate table. That was
+byte from `data/raw/Cornus_DQD_SDHs.fasta` plus the verified coordinate table. That was
 confirmed after the project was restructured: the regenerated primers hash identically to the
 committed ones, and 22 of the 26 specificity evidence files do as well
 (report 07 lists the exceptions and why).
@@ -79,10 +78,3 @@ committed ones, and 22 of the 26 specificity evidence files do as well
 
 * 48 MB transcriptome FASTA and GFF3 annotation, and the BLAST databases built from them
   (`data/external/`, gitignored).
-* Vector-screening work for the NCBI submission — that is a separate task with its own tools and
-  outputs, kept in the sibling `vector_work/` directory.
-* Photos, InterProScan output and literature spreadsheets, kept in the sibling `reference/`.
-* Superseded material: `archive/` inside this folder (redundant duplicates, gitignored) and
-  `PCR_SDH/archive/old_layout_20261102/` outside it (the pre-repository layout, with a manifest
-  mapping every file to its replacement here). Earlier rounds remain in `PCR_SDH/backup/`.
-  Nothing was deleted during the reorganisation.
