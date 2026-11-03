@@ -1,134 +1,88 @@
-# Cornus sericea DQD/SDH Primer Design
+# Gene-specific PCR primers for six *Cornus sericea* DQD/SDH genes
 
+Six primer pairs that discriminate `CserDQD/SDH1.1`, `SDH1.2`, `SDH2`, `SDH3`, `SDH4` and `SDH5`
+in one multiplex, designed from the *C. sericea* transcriptome and checked for specificity
+entirely locally.
 
-**Project:** Design six gene‑specific PCR primer pairs to distinguish the six *Cornus sericea* DQD/SDH genes:
-`CserDQD/SDH1.1`, `CserDQD/SDH1.2`, `CserDQD/SDH2`, `CserDQD/SDH3`, `CserDQD/SDH4`, `CserDQD/SDH5`.
+**Deliverables**
 
-**Date:** 2026‑10‑29  
+| File | Contents |
+|---|---|
+| `data/results/FINAL_primers.fasta` | the 12 primers, ready for bulk ordering |
+| `data/results/FINAL_primer_pairs.tsv` | sequences, positions, regions, GC, Tm, product sizes |
+| `data/results/BACKUP_SDH3_PAIR.txt` | drop-in replacement SDH3 pair with no competent foreign sites |
+| `data/results/VALIDATION_auto_report.md` | auto-generated validation of the set |
+| `data/results/specificity/` | evidence for all specificity checks, machine-readable |
 
+## Start here
 
----
+| Report | Read it for |
+|---|---|
+| [01](reports/01_inputs_and_annotation.md) | which transcripts are the six genes, coordinate verification, why no existing lab primer could be reused |
+| [02](reports/02_sequence_survey.md) | where the paralogs actually differ; the SDH1.1 constraint |
+| [03](reports/03_primer_design.md) | design rules and the final twelve primers |
+| [04](reports/04_specificity_checks.md) | the four-layer specificity screen and the SDH3 cross-amplification finding |
+| [05](reports/05_sdh3_backup_pair.md) | the backup SDH3 pair and how it was verified |
+| [06](reports/06_lab_plan.md) | ordering, cycling, gel expectations, failure modes |
+| [07](reports/07_reproducibility.md) | environment, how to rerun, inventory, open items |
 
-## 1. Goal and strategy
+## The result in one table
 
-**Goal:** Obtain six primer pairs that:
-- Amplify only their intended transcript (no cross‑amplification among the six DQD/SDH paralogs).
-- Produce amplicons spaced ~60 bp apart (120 bp → 420 bp) so all six reactions can be resolved together on a 2 % agarose gel.
-- Pass standard primer‑quality filters (GC 40–60 %, no homopolymers ≥4 nt, no problematic 3′‑tail composition, no ≥7‑nt self‑complementarity).
-- Be compatible with a single annealing temperature window (54–58 °C) for multiplex PCR.
-- Show zero competent off‑target priming in the whole *Cornus* transcriptome (29 k transcripts, 48 Mb).
+| Gene | Forward | Reverse | Product |
+|---|---|---|---|
+| CserDQD/SDH1.1 | GTTCACTGGTGGATTAAGTG | ATAAGCACCTTACTTGAAGC | 120 bp |
+| CserDQD/SDH1.2 | GCAAGCAGATTTCAGAGCTG | ACTCAGCAACCCAATAGTGC | 180 bp |
+| CserDQD/SDH2 | GCACTTCGATTAGCCATGGA | TGCCACATCAGTGATATCCG | 240 bp |
+| CserDQD/SDH3 | TGGAGCCGACATTGTGAAGA | TGACCGACAGGCTTTCCAAT | 300 bp |
+| CserDQD/SDH4 | AGAGGAAGCACTAGGAGGTT | AAGAGTCTGGTCCATTTCGG | 360 bp |
+| CserDQD/SDH5 | ACTTGCTCAGTCCATAGGTG | ACCTCAGTCACAGGAATTCG | 420 bp |
 
-**Strategy:** De‑novo primer design using the six curated GenBank transcripts (PZ518666–PZ518671). No attempt was made to reuse existing primers from other species because they showed no similarity (≥2 mismatches) to the Cornus sequences.
+All 20 nt. Sizes are spaced 60 bp apart so the six amplicons separate on 2 % agarose.
+GenBank records: PZ518666 (SDH1.1), PZ518667 (SDH1.2), PZ518668 (SDH2), PZ518669 (SDH3),
+PZ518670 (SDH4), PZ518671 (SDH5).
 
----
+**Two things to know before ordering** (details in reports 04-06):
 
+* The SDH3 pair is specific at normal stringency but retains mismatch-tolerant sites on SDH4
+  (300 bp) and SDH2 (309 bp). Anneal at 58 °C, sequence the band, or order the backup pair.
+* SDH1.1 has only 38 unique nucleotides in these transcripts, so its pair uses a unique forward
+  anchor and a reverse site shared with SDH1.2. A 314 bp SDH1.2 band can appear in the tube.
 
-## 2. Data
+## Quickstart
 
-| File | Description |
-|------|-------------|
-| [`FINAL_primer_pairs.tsv`](FINAL_primer_pairs.tsv) | Machine‑readable primer table (gene, sequence, position, GC %, Tm, amplicon size). |
-| [`FINAL_primers.fasta`](FINAL_primers.fasta) | Twelve primers in FASTA format, ready for ordering‑portal bulk upload. |
-| [`data/results/`](data/results/) | Copies of the final primer files. |
-| [`data/input/`](data/input/) | Input sequences, coordinates, transcriptome assembly. |
-| [`scripts/`](scripts/) | Reproducible Python scripts for primer generation, validation, and specificity checking. |
-
-
-**Gene mapping:**
-
-| Gene | GenBank accession | Length (bp) | 5′‑UTR bp | CDS bp | 3′‑UTR bp |
-|------|------------------|-------------|-----------|--------|-----------|
-| CserDQD/SDH1.1 | PZ518666 | 1885 | 130 | 1497 | 258 |
-| CserDQD/SDH1.2 | PZ518667 | 2779 | 130 | 1503 | 1146 |
-| CserDQD/SDH2 | PZ518668 | 2241 | 224 | 1566 | 451 |
-| CserDQD/SDH3 | PZ518669 | 2133 | 240 | 1599 | 294 |
-| CserDQD/SDH4 | PZ518670 | 2083 | 133 | 1584 | 366 |
-| CserDQD/SDH5 | PZ518671 | 1767 | 112 | 1560 | 95 |
-
----
-
-## 3. Design pipeline (scripts and steps)
-
-All scripts are available in `scripts/`; the main workflow is reproducible.
-
-### 3.1. Primer‑candidate generation (`design_final_pairs.py`)
-- Slides a 20‑nt window along each whole transcript.
-- Retains only windows **unique** to that transcript (no exact match in any of the other five).
-- Applies quality filters:
-  - GC 40–60 %
-  - No homopolymer ≥4 nt
-  - No 3′‑tail `TTTT`/`AAAA` (prone to mis‑priming)
-  - No `GGG`/`CCC` at the 3′ end (stable mis‑extension)
-  - No inverted self‑complementarity ≥7 nt
-  - Acceptable 3′‑terminal base composition (avoid T/A as last base)
-- Calculates SantaLucia 1998 nearest‑neighbour Tm (250 nM primer, 50 mM Na⁺).
-- Pairs forward‑reverse candidates 120–500 bp apart with ΔTm ≤ 4 °C.
-
-**Output per gene:** thousands of candidate pairs.
-
-### 3.2. Multiplex‑ladder assignment
-Each gene is assigned a target amplicon size to produce a 60‑bp‑spaced ladder:
-
-| Gene | Target size (bp) |
-|------|------------------|
-| SDH1.1 | 120 |
-| SDH1.2 | 180 |
-| SDH2   | 240 |
-| SDH3   | 300 |
-| SDH4   | 360 |
-| SDH5   | 420 |
-
-From each candidate pool the pair closest to the target size is selected, provided it does not form a ≥8‑nt 3′‑terminal dimer with any primer already chosen.
-
-### 3.3. Special handling of SDH1.1
-SDH1.1 shares its 5′‑UTR and most of its CDS with SDH1.2; only a **19‑nt block** near the 3′ end is unique. Consequently no fully‑unique pair exists. The pipeline falls back to a **one‑sided‑specific** design:
-- Forward primer sits inside the unique block (unique to SDH1.1).
-- Reverse primer is shared with SDH1.2 but cannot amplify SDH1.2 because the forward primer is absent there.
-
-### 3.4. In‑silico validation (`validate_final_primers.py`)
-- Exact‑match PCR on the six transcripts: confirms no cross‑amplification.
-- Inter‑primer dimer check: no ≥8‑nt 3′‑terminal complementarity among the 12 primers.
-- Self‑dimer and hairpin checks.
-
-### 3.5. Specificity validation (four‑layer check)
-All analyses were run **locally**; no data were uploaded to external services.
-
-| Check | Script | Scope | Key result |
-|-------|--------|-------|------------|
-| 1 – BLAST‑like, six curated transcripts | `run_primer_blast_check.py` | Six transcripts | All six pairs specific (no cross‑products under ≤3 mm, 5‑nt 3′‑run rule). |
-| 2 – BLAST‑like, whole transcriptome | `run_transcriptome_check.py` | 29 k transcripts, 48 Mb | Only 11 full‑length primer hits, all on the five DQD/SDH contigs (0 off‑family). |
-| 3 – Exhaustive seed‑free scan, whole transcriptome | `tx_exhaustive_scan.py` | Every 20‑nt window (47.6 M positions) | 0 products on unrelated transcripts even under ≤8 mismatches, 3‑nt 3′‑run rule. |
-| 4 – Exhaustive seed‑free scan, six curated transcripts | `curated_exhaustive_scan.py` | Every window vs all six transcripts | Under permissive rules (≤6 mm, ≥5‑nt 3′‑run) 0 off-target. |
-
-
-## 4. Final primer set 
-
-| Gene | Direction | Sequence (5′→3′) | Position (transcript) | Region | GC % | Tm (°C) | Amplicon (bp) |
-|------|-----------|------------------|----------------------|--------|------|---------|---------------|
-| CserDQD/SDH1.1 | F | `GTTCACTGGTGGATTAAGTG` | 1570–1589 | CDS | 45.0 | 49.5 | **120** |
-|  | R | `ATAAGCACCTTACTTGAAGC` | 1670–1689 | 3′UTR | 40.0 | 48.6 | |
-| CserDQD/SDH1.2 | F | `GCAAGCAGATTTCAGAGCTG` | 2268–2287 | 3′UTR | 50.0 | 53.1 | **180** |
-|  | R | `ACTCAGCAACCCAATAGTGC` | 2428–2447 | 3′UTR | 50.0 | 54.0 | |
-| CserDQD/SDH2 | F | `GCACTTCGATTAGCCATGGA` | 492–511 | CDS | 50.0 | 54.0 | **240** |
-|  | R | `TGCCACATCAGTGATATCCG` | 712–731 | CDS | 50.0 | 54.0 | |
-| CserDQD/SDH3 | F | `TGGAGCCGACATTGTGAAGA` | 738–757 | CDS | 50.0 | 55.2 | **300** |
-|  | R | `TGACCGACAGGCTTTCCAAT` | 1018–1037 | CDS | 50.0 | 55.1 | |
-| CserDQD/SDH4 | F | `AGAGGAAGCACTAGGAGGTT` | 1216–1235 | CDS | 50.0 | 53.1 | **360** |
-|  | R | `AAGAGTCTGGTCCATTTCGG` | 1556–1575 | CDS | 50.0 | 52.8 | |
-| CserDQD/SDH5 | F | `ACTTGCTCAGTCCATAGGTG` | 1048–1067 | CDS | 50.0 | 53.0 | **420** |
-|  | R | `ACCTCAGTCACAGGAATTCG` | 1448–1467 | CDS | 50.0 | 53.2 | |
-
-**Tm note:** SantaLucia 1998 nearest‑neighbour values at 250 nM primer, 50 mM Na⁺. For high‑salt Taq buffers, add ~3–5 °C.
-
-**Amplicon ladder (multiplex‑ready):**
-```
-SDH1.1  |■■ 120 bp
-SDH1.2  |■■■ 180 bp
-SDH2    |■■■■ 240 bp
-SDH3    |■■■■■ 300 bp
-SDH4    |■■■■■■ 360 bp
-SDH5    |■■■■■■■ 420 bp
-         ↑ ~60 bp apart → all six bands resolve on 2% agarose or a TapeStation
+```sh
+python3 -m pip install numpy            # the only non-stdlib requirement
+./scripts/run_all.sh --no-tx            # stages 1-4 on committed data (Checks 1 and 4)
+./scripts/run_all.sh                    # adds stage 5 and the transcriptome-wide Checks 2, 3, 3b
 ```
 
+The transcriptome-wide work reads the assembly from `data/external/`, which is not committed, so
+a fresh clone needs those files placed there first — see `data/external/README.md` for names and
+symlink commands. Those scripts stop with a clear message when a file is absent instead of
+producing a partial result.
 
+Runs 1-4 of the pipeline need only what is committed in `data/raw/`. Each script also works on its
+own; they are in `scripts/step1_inputs/` … `scripts/step5_sdh3_backup/`.
+
+Scripts locate their own files through `scripts/paths.py`, so any script can be run from any
+working directory, and the folder can be moved or cloned anywhere without editing paths.
+
+## Reproducing the deliverable
+
+`design_final_pairs.py` regenerates `FINAL_primers.fasta` and `FINAL_primer_pairs.tsv` byte for
+byte from `data/raw/DQD_SDH_possible_nt.fasta` plus the verified coordinate table. That was
+confirmed after the project was restructured: the regenerated primers hash identically to the
+committed ones, and 22 of the 26 specificity evidence files do as well
+(report 07 lists the exceptions and why).
+
+## Not in this repository
+
+* 48 MB transcriptome FASTA and GFF3 annotation, and the BLAST databases built from them
+  (`data/external/`, gitignored).
+* Vector-screening work for the NCBI submission — that is a separate task with its own tools and
+  outputs, kept in the sibling `vector_work/` directory.
+* Photos, InterProScan output and literature spreadsheets, kept in the sibling `reference/`.
+* Superseded material: `archive/` inside this folder (redundant duplicates, gitignored) and
+  `PCR_SDH/archive/old_layout_20261102/` outside it (the pre-repository layout, with a manifest
+  mapping every file to its replacement here). Earlier rounds remain in `PCR_SDH/backup/`.
+  Nothing was deleted during the reorganisation.

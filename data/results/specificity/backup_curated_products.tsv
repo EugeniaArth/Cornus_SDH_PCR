@@ -1,0 +1,343 @@
+config	rule	fwd_of_pair	rev_of_pair	transcript	cross	size	f_mm	r_mm	f_tail	r_tail
+#1 top-ranked backup	competent	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#1 top-ranked backup	competent	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#1 top-ranked backup	competent	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#1 top-ranked backup	competent	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#1 top-ranked backup	competent	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#1 top-ranked backup	competent	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#1 top-ranked backup	competent	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#1 top-ranked backup	long anchor	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#1 top-ranked backup	long anchor	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#1 top-ranked backup	long anchor	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#1 top-ranked backup	long anchor	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+#1 top-ranked backup	long anchor	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#1 top-ranked backup	long anchor	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#1 top-ranked backup	long anchor	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#1 top-ranked backup	long anchor	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#1 top-ranked backup	permissive	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#1 top-ranked backup	permissive	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#1 top-ranked backup	permissive	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#1 top-ranked backup	permissive	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+#1 top-ranked backup	permissive	SDH2	SDH1.2	SDH3	yes	571	5	7	5	5
+#1 top-ranked backup	permissive	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#1 top-ranked backup	permissive	SDH3	SDH1.2	SDH3	yes	889	0	7	20	5
+#1 top-ranked backup	permissive	SDH3	SDH3	SDH3	no	125	8	0	6	20
+#1 top-ranked backup	permissive	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#1 top-ranked backup	permissive	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#1 top-ranked backup	permissive	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#1 top-ranked backup	strict	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#1 top-ranked backup	strict	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#1 top-ranked backup	strict	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#1 top-ranked backup	strict	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#1 top-ranked backup	strict	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#1 top-ranked backup	strict	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#1 top-ranked backup	strict	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#1 top-ranked backup	very permissive	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#1 top-ranked backup	very permissive	SDH1.1	SDH1.1	SDH1.1	no	504	8	0	3	20
+#1 top-ranked backup	very permissive	SDH1.1	SDH1.1	SDH1.1	no	756	8	0	4	20
+#1 top-ranked backup	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	60	8	8	4	3
+#1 top-ranked backup	very permissive	SDH1.1	SDH1.2	SDH1.2	yes	60	8	8	4	3
+#1 top-ranked backup	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	428	8	8	3	8
+#1 top-ranked backup	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	680	8	8	4	8
+#1 top-ranked backup	very permissive	SDH1.1	SDH4	SDH4	yes	778	8	0	4	20
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	126	7	0	3	20
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	899	7	0	3	20
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.1	SDH1.1	yes	987	8	0	3	20
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.2	SDH1.1	no	291	8	8	3	3
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.2	SDH1.2	no	291	8	8	3	3
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.2	SDH1.1	no	496	8	8	3	3
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.2	SDH1.2	no	496	8	8	3	3
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.2	SDH1.2	no	765	7	0	3	20
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.2	SDH1.2	no	823	7	8	3	8
+#1 top-ranked backup	very permissive	SDH1.2	SDH1.2	SDH1.1	no	911	8	8	3	8
+#1 top-ranked backup	very permissive	SDH1.2	SDH4	SDH4	yes	351	8	0	3	20
+#1 top-ranked backup	very permissive	SDH2	SDH1.2	SDH2	yes	489	0	7	20	3
+#1 top-ranked backup	very permissive	SDH2	SDH1.2	SDH3	yes	571	5	7	5	5
+#1 top-ranked backup	very permissive	SDH2	SDH1.2	SDH2	yes	577	0	8	20	3
+#1 top-ranked backup	very permissive	SDH2	SDH1.2	SDH1.1	yes	857	8	8	7	3
+#1 top-ranked backup	very permissive	SDH2	SDH1.2	SDH1.2	yes	857	8	8	7	3
+#1 top-ranked backup	very permissive	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#1 top-ranked backup	very permissive	SDH3	SDH1.1	SDH1.2	yes	745	8	0	3	20
+#1 top-ranked backup	very permissive	SDH3	SDH1.2	SDH1.2	yes	611	8	0	3	20
+#1 top-ranked backup	very permissive	SDH3	SDH1.2	SDH1.2	yes	669	8	8	3	8
+#1 top-ranked backup	very permissive	SDH3	SDH1.2	SDH3	yes	714	8	7	6	5
+#1 top-ranked backup	very permissive	SDH3	SDH1.2	SDH3	yes	889	0	7	20	5
+#1 top-ranked backup	very permissive	SDH3	SDH3	SDH3	no	125	8	0	6	20
+#1 top-ranked backup	very permissive	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#1 top-ranked backup	very permissive	SDH4	SDH1.1	SDH1.2	yes	161	7	0	4	20
+#1 top-ranked backup	very permissive	SDH4	SDH1.2	SDH1.2	yes	85	7	8	4	8
+#1 top-ranked backup	very permissive	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#1 top-ranked backup	very permissive	SDH4	SDH4	SDH4	no	422	7	0	3	20
+#1 top-ranked backup	very permissive	SDH5	SDH1.2	SDH2	yes	529	8	7	4	3
+#1 top-ranked backup	very permissive	SDH5	SDH1.2	SDH3	yes	611	8	7	5	5
+#1 top-ranked backup	very permissive	SDH5	SDH1.2	SDH2	yes	617	8	8	4	3
+#1 top-ranked backup	very permissive	SDH5	SDH2	SDH2	yes	280	8	0	4	20
+#1 top-ranked backup	very permissive	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	competent	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	competent	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	competent	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	competent	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	competent	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	competent	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	competent	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	long anchor	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	long anchor	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	long anchor	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	long anchor	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+#2 zero foreign sites even at ≤8 mm/3-nt run	long anchor	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	long anchor	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	long anchor	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	long anchor	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	permissive	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	permissive	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	permissive	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	permissive	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+#2 zero foreign sites even at ≤8 mm/3-nt run	permissive	SDH2	SDH1.2	SDH3	yes	571	5	7	5	5
+#2 zero foreign sites even at ≤8 mm/3-nt run	permissive	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	permissive	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	permissive	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	permissive	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	strict	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	strict	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	strict	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	strict	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	strict	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	strict	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	strict	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.1	SDH1.1	SDH1.1	no	504	8	0	3	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.1	SDH1.1	SDH1.1	no	756	8	0	4	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	60	8	8	4	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.1	SDH1.2	SDH1.2	yes	60	8	8	4	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	428	8	8	3	8
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	680	8	8	4	8
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.1	SDH4	SDH4	yes	778	8	0	4	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	126	7	0	3	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	899	7	0	3	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.1	SDH1.1	yes	987	8	0	3	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.2	SDH1.1	no	291	8	8	3	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.2	SDH1.2	no	291	8	8	3	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.2	SDH1.1	no	496	8	8	3	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.2	SDH1.2	no	496	8	8	3	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.2	SDH1.2	no	765	7	0	3	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.2	SDH1.2	no	823	7	8	3	8
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH1.2	SDH1.1	no	911	8	8	3	8
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH3	SDH3	yes	574	8	0	3	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH1.2	SDH4	SDH4	yes	351	8	0	3	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH2	SDH1.2	SDH2	yes	489	0	7	20	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH2	SDH1.2	SDH3	yes	571	5	7	5	5
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH2	SDH1.2	SDH2	yes	577	0	8	20	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH2	SDH1.2	SDH1.1	yes	857	8	8	7	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH2	SDH1.2	SDH1.2	yes	857	8	8	7	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH4	SDH1.1	SDH1.2	yes	161	7	0	4	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH4	SDH1.2	SDH1.2	yes	85	7	8	4	8
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH4	SDH4	SDH4	no	422	7	0	3	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH5	SDH1.2	SDH2	yes	529	8	7	4	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH5	SDH1.2	SDH3	yes	611	8	7	5	5
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH5	SDH1.2	SDH2	yes	617	8	8	4	3
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH5	SDH2	SDH2	yes	280	8	0	4	20
+#2 zero foreign sites even at ≤8 mm/3-nt run	very permissive	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#3 highest-Tm backup (hot annealing)	competent	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#3 highest-Tm backup (hot annealing)	competent	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#3 highest-Tm backup (hot annealing)	competent	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#3 highest-Tm backup (hot annealing)	competent	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#3 highest-Tm backup (hot annealing)	competent	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#3 highest-Tm backup (hot annealing)	competent	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#3 highest-Tm backup (hot annealing)	competent	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#3 highest-Tm backup (hot annealing)	long anchor	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#3 highest-Tm backup (hot annealing)	long anchor	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#3 highest-Tm backup (hot annealing)	long anchor	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#3 highest-Tm backup (hot annealing)	long anchor	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+#3 highest-Tm backup (hot annealing)	long anchor	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#3 highest-Tm backup (hot annealing)	long anchor	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#3 highest-Tm backup (hot annealing)	long anchor	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#3 highest-Tm backup (hot annealing)	long anchor	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#3 highest-Tm backup (hot annealing)	permissive	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#3 highest-Tm backup (hot annealing)	permissive	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#3 highest-Tm backup (hot annealing)	permissive	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#3 highest-Tm backup (hot annealing)	permissive	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+#3 highest-Tm backup (hot annealing)	permissive	SDH2	SDH1.2	SDH3	yes	571	5	7	5	5
+#3 highest-Tm backup (hot annealing)	permissive	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#3 highest-Tm backup (hot annealing)	permissive	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#3 highest-Tm backup (hot annealing)	permissive	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#3 highest-Tm backup (hot annealing)	permissive	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#3 highest-Tm backup (hot annealing)	strict	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#3 highest-Tm backup (hot annealing)	strict	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#3 highest-Tm backup (hot annealing)	strict	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#3 highest-Tm backup (hot annealing)	strict	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#3 highest-Tm backup (hot annealing)	strict	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#3 highest-Tm backup (hot annealing)	strict	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#3 highest-Tm backup (hot annealing)	strict	SDH5	SDH5	SDH5	no	420	0	0	20	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.1	SDH1.1	SDH1.1	no	504	8	0	3	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.1	SDH1.1	SDH1.1	no	756	8	0	4	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	60	8	8	4	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.1	SDH1.2	SDH1.2	yes	60	8	8	4	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	428	8	8	3	8
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	680	8	8	4	8
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.1	SDH4	SDH4	yes	778	8	0	4	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	126	7	0	3	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	899	7	0	3	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.1	SDH1.1	yes	987	8	0	3	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.2	SDH1.1	no	291	8	8	3	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	291	8	8	3	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.2	SDH1.1	no	496	8	8	3	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	496	8	8	3	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	765	7	0	3	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	823	7	8	3	8
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH1.2	SDH1.1	no	911	8	8	3	8
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH3	SDH4	yes	638	8	8	3	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH1.2	SDH4	SDH4	yes	351	8	0	3	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH2	SDH1.2	SDH2	yes	489	0	7	20	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH2	SDH1.2	SDH3	yes	571	5	7	5	5
+#3 highest-Tm backup (hot annealing)	very permissive	SDH2	SDH1.2	SDH2	yes	577	0	8	20	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH2	SDH1.2	SDH1.1	yes	857	8	8	7	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH2	SDH1.2	SDH1.2	yes	857	8	8	7	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH2	SDH2	SDH2	no	240	0	0	20	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH2	SDH3	SDH3	yes	558	5	7	5	4
+#3 highest-Tm backup (hot annealing)	very permissive	SDH3	SDH3	SDH3	no	300	0	0	20	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH4	SDH1.1	SDH1.2	yes	161	7	0	4	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH4	SDH1.2	SDH1.2	yes	85	7	8	4	8
+#3 highest-Tm backup (hot annealing)	very permissive	SDH4	SDH3	SDH4	yes	647	0	8	20	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH4	SDH3	SDH4	yes	709	7	8	3	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH4	SDH4	SDH4	no	360	0	0	20	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH4	SDH4	SDH4	no	422	7	0	3	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH5	SDH1.2	SDH2	yes	529	8	7	4	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH5	SDH1.2	SDH3	yes	611	8	7	5	5
+#3 highest-Tm backup (hot annealing)	very permissive	SDH5	SDH1.2	SDH2	yes	617	8	8	4	3
+#3 highest-Tm backup (hot annealing)	very permissive	SDH5	SDH2	SDH2	yes	280	8	0	4	20
+#3 highest-Tm backup (hot annealing)	very permissive	SDH5	SDH3	SDH3	yes	598	8	7	5	4
+#3 highest-Tm backup (hot annealing)	very permissive	SDH5	SDH5	SDH5	no	420	0	0	20	20
+in-service (baseline)	competent	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+in-service (baseline)	competent	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+in-service (baseline)	competent	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+in-service (baseline)	competent	SDH2	SDH2	SDH2	no	240	0	0	20	20
+in-service (baseline)	competent	SDH2	SDH3	SDH3	yes	488	5	0	5	20
+in-service (baseline)	competent	SDH2	SDH3	SDH2	yes	494	0	4	20	5
+in-service (baseline)	competent	SDH3	SDH2	SDH2	yes	382	6	0	6	20
+in-service (baseline)	competent	SDH3	SDH3	SDH3	no	300	0	0	20	20
+in-service (baseline)	competent	SDH3	SDH3	SDH4	no	300	3	3	7	8
+in-service (baseline)	competent	SDH3	SDH4	SDH4	yes	948	3	0	7	20
+in-service (baseline)	competent	SDH4	SDH4	SDH4	no	360	0	0	20	20
+in-service (baseline)	competent	SDH5	SDH5	SDH5	no	420	0	0	20	20
+in-service (baseline)	long anchor	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+in-service (baseline)	long anchor	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+in-service (baseline)	long anchor	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+in-service (baseline)	long anchor	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+in-service (baseline)	long anchor	SDH2	SDH2	SDH2	no	240	0	0	20	20
+in-service (baseline)	long anchor	SDH2	SDH3	SDH4	yes	488	5	3	9	8
+in-service (baseline)	long anchor	SDH3	SDH3	SDH3	no	300	0	0	20	20
+in-service (baseline)	long anchor	SDH4	SDH4	SDH4	no	360	0	0	20	20
+in-service (baseline)	long anchor	SDH5	SDH5	SDH5	no	420	0	0	20	20
+in-service (baseline)	permissive	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+in-service (baseline)	permissive	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+in-service (baseline)	permissive	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+in-service (baseline)	permissive	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+in-service (baseline)	permissive	SDH2	SDH1.2	SDH3	yes	571	5	7	5	5
+in-service (baseline)	permissive	SDH2	SDH2	SDH2	no	240	0	0	20	20
+in-service (baseline)	permissive	SDH2	SDH3	SDH2	yes	308	0	8	20	6
+in-service (baseline)	permissive	SDH2	SDH3	SDH3	yes	488	5	0	5	20
+in-service (baseline)	permissive	SDH2	SDH3	SDH4	yes	488	5	3	9	8
+in-service (baseline)	permissive	SDH2	SDH3	SDH2	yes	494	0	4	20	5
+in-service (baseline)	permissive	SDH3	SDH1.2	SDH3	yes	383	0	7	20	5
+in-service (baseline)	permissive	SDH3	SDH2	SDH2	yes	382	6	0	6	20
+in-service (baseline)	permissive	SDH3	SDH3	SDH2	no	123	3	8	7	6
+in-service (baseline)	permissive	SDH3	SDH3	SDH3	no	300	0	0	20	20
+in-service (baseline)	permissive	SDH3	SDH3	SDH4	no	300	3	3	7	8
+in-service (baseline)	permissive	SDH3	SDH3	SDH2	no	309	3	4	7	5
+in-service (baseline)	permissive	SDH3	SDH3	SDH4	no	630	6	3	6	8
+in-service (baseline)	permissive	SDH3	SDH3	SDH2	no	636	6	4	6	5
+in-service (baseline)	permissive	SDH3	SDH4	SDH4	yes	948	3	0	7	20
+in-service (baseline)	permissive	SDH4	SDH4	SDH4	no	360	0	0	20	20
+in-service (baseline)	permissive	SDH5	SDH3	SDH3	yes	528	8	0	5	20
+in-service (baseline)	permissive	SDH5	SDH5	SDH5	no	420	0	0	20	20
+in-service (baseline)	strict	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+in-service (baseline)	strict	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+in-service (baseline)	strict	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+in-service (baseline)	strict	SDH2	SDH2	SDH2	no	240	0	0	20	20
+in-service (baseline)	strict	SDH3	SDH3	SDH3	no	300	0	0	20	20
+in-service (baseline)	strict	SDH3	SDH4	SDH4	yes	948	3	0	7	20
+in-service (baseline)	strict	SDH4	SDH4	SDH4	no	360	0	0	20	20
+in-service (baseline)	strict	SDH5	SDH5	SDH5	no	420	0	0	20	20
+in-service (baseline)	very permissive	SDH1.1	SDH1.1	SDH1.1	no	120	0	0	20	20
+in-service (baseline)	very permissive	SDH1.1	SDH1.1	SDH1.1	no	504	8	0	3	20
+in-service (baseline)	very permissive	SDH1.1	SDH1.1	SDH1.1	no	756	8	0	4	20
+in-service (baseline)	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	60	8	8	4	3
+in-service (baseline)	very permissive	SDH1.1	SDH1.2	SDH1.2	yes	60	8	8	4	3
+in-service (baseline)	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	428	8	8	3	8
+in-service (baseline)	very permissive	SDH1.1	SDH1.2	SDH1.1	yes	680	8	8	4	8
+in-service (baseline)	very permissive	SDH1.1	SDH3	SDH4	yes	130	8	3	4	8
+in-service (baseline)	very permissive	SDH1.1	SDH3	SDH4	yes	397	8	8	4	5
+in-service (baseline)	very permissive	SDH1.1	SDH3	SDH4	yes	709	8	3	4	8
+in-service (baseline)	very permissive	SDH1.1	SDH4	SDH4	yes	778	8	0	4	20
+in-service (baseline)	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	126	7	0	3	20
+in-service (baseline)	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	314	0	0	20	20
+in-service (baseline)	very permissive	SDH1.2	SDH1.1	SDH1.2	yes	899	7	0	3	20
+in-service (baseline)	very permissive	SDH1.2	SDH1.1	SDH1.1	yes	987	8	0	3	20
+in-service (baseline)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	180	0	0	20	20
+in-service (baseline)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	238	0	8	20	8
+in-service (baseline)	very permissive	SDH1.2	SDH1.2	SDH1.1	no	291	8	8	3	3
+in-service (baseline)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	291	8	8	3	3
+in-service (baseline)	very permissive	SDH1.2	SDH1.2	SDH1.1	no	496	8	8	3	3
+in-service (baseline)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	496	8	8	3	3
+in-service (baseline)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	765	7	0	3	20
+in-service (baseline)	very permissive	SDH1.2	SDH1.2	SDH1.2	no	823	7	8	3	8
+in-service (baseline)	very permissive	SDH1.2	SDH1.2	SDH1.1	no	911	8	8	3	8
+in-service (baseline)	very permissive	SDH1.2	SDH3	SDH1.1	yes	142	8	8	3	4
+in-service (baseline)	very permissive	SDH1.2	SDH3	SDH1.2	yes	142	8	8	3	4
+in-service (baseline)	very permissive	SDH1.2	SDH4	SDH4	yes	351	8	0	3	20
+in-service (baseline)	very permissive	SDH2	SDH1.2	SDH2	yes	489	0	7	20	3
+in-service (baseline)	very permissive	SDH2	SDH1.2	SDH3	yes	571	5	7	5	5
+in-service (baseline)	very permissive	SDH2	SDH1.2	SDH2	yes	577	0	8	20	3
+in-service (baseline)	very permissive	SDH2	SDH1.2	SDH1.1	yes	857	8	8	7	3
+in-service (baseline)	very permissive	SDH2	SDH1.2	SDH1.2	yes	857	8	8	7	3
+in-service (baseline)	very permissive	SDH2	SDH2	SDH2	no	240	0	0	20	20
+in-service (baseline)	very permissive	SDH2	SDH3	SDH4	yes	176	5	8	9	5
+in-service (baseline)	very permissive	SDH2	SDH3	SDH2	yes	308	0	8	20	6
+in-service (baseline)	very permissive	SDH2	SDH3	SDH3	yes	488	5	0	5	20
+in-service (baseline)	very permissive	SDH2	SDH3	SDH4	yes	488	5	3	9	8
+in-service (baseline)	very permissive	SDH2	SDH3	SDH2	yes	494	0	4	20	5
+in-service (baseline)	very permissive	SDH2	SDH3	SDH1.1	yes	503	8	8	7	4
+in-service (baseline)	very permissive	SDH2	SDH3	SDH1.2	yes	503	8	8	7	4
+in-service (baseline)	very permissive	SDH3	SDH1.2	SDH2	yes	304	3	7	7	3
+in-service (baseline)	very permissive	SDH3	SDH1.2	SDH3	yes	383	0	7	20	5
+in-service (baseline)	very permissive	SDH3	SDH1.2	SDH2	yes	392	3	8	7	3
+in-service (baseline)	very permissive	SDH3	SDH1.2	SDH2	yes	631	6	7	6	3
+in-service (baseline)	very permissive	SDH3	SDH1.2	SDH2	yes	719	6	8	6	3
+in-service (baseline)	very permissive	SDH3	SDH1.2	SDH3	yes	734	3	7	3	5
+in-service (baseline)	very permissive	SDH3	SDH2	SDH2	yes	382	6	0	6	20
+in-service (baseline)	very permissive	SDH3	SDH3	SDH2	no	123	3	8	7	6
+in-service (baseline)	very permissive	SDH3	SDH3	SDH3	no	300	0	0	20	20
+in-service (baseline)	very permissive	SDH3	SDH3	SDH4	no	300	3	3	7	8
+in-service (baseline)	very permissive	SDH3	SDH3	SDH2	no	309	3	4	7	5
+in-service (baseline)	very permissive	SDH3	SDH3	SDH4	no	318	6	8	6	5
+in-service (baseline)	very permissive	SDH3	SDH3	SDH2	no	450	6	8	6	6
+in-service (baseline)	very permissive	SDH3	SDH3	SDH5	no	465	8	8	3	4
+in-service (baseline)	very permissive	SDH3	SDH3	SDH4	no	630	6	3	6	8
+in-service (baseline)	very permissive	SDH3	SDH3	SDH2	no	636	6	4	6	5
+in-service (baseline)	very permissive	SDH3	SDH3	SDH3	no	651	3	0	3	20
+in-service (baseline)	very permissive	SDH3	SDH4	SDH4	yes	948	3	0	7	20
+in-service (baseline)	very permissive	SDH4	SDH1.1	SDH1.2	yes	161	7	0	4	20
+in-service (baseline)	very permissive	SDH4	SDH1.2	SDH1.2	yes	85	7	8	4	8
+in-service (baseline)	very permissive	SDH4	SDH4	SDH4	no	360	0	0	20	20
+in-service (baseline)	very permissive	SDH4	SDH4	SDH4	no	422	7	0	3	20
+in-service (baseline)	very permissive	SDH5	SDH1.2	SDH2	yes	529	8	7	4	3
+in-service (baseline)	very permissive	SDH5	SDH1.2	SDH3	yes	611	8	7	5	5
+in-service (baseline)	very permissive	SDH5	SDH1.2	SDH2	yes	617	8	8	4	3
+in-service (baseline)	very permissive	SDH5	SDH2	SDH2	yes	280	8	0	4	20
+in-service (baseline)	very permissive	SDH5	SDH3	SDH2	yes	348	8	8	4	6
+in-service (baseline)	very permissive	SDH5	SDH3	SDH3	yes	528	8	0	5	20
+in-service (baseline)	very permissive	SDH5	SDH3	SDH2	yes	534	8	4	4	5
+in-service (baseline)	very permissive	SDH5	SDH5	SDH5	no	420	0	0	20	20

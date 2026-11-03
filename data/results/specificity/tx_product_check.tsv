@@ -1,0 +1,6 @@
+pair_gene	contig	size	mm_fwd	mm_rev	mm_total	class	gene_name	product
+CserDQD_SDH1.2	NODE_10980_length_2779_cov_121.715385_g1243_i5	180	0	0	0	TARGET_CONTIG	XP_059625762.1	XP_059625762.1 bifunctional 3-dehydroquinate dehydratase/shikimate dehydrogenase, chloroplastic-like isoform X3 [Cornus 
+CserDQD_SDH2	NODE_18517_length_2241_cov_255.196168_g8755_i0	240	0	0	0	TARGET_CONTIG	XP_059632657.1	XP_059632657.1 bifunctional 3-dehydroquinate dehydratase/shikimate dehydrogenase, chloroplastic isoform X1 [Cornus flori
+CserDQD_SDH3	NODE_20612_length_2133_cov_1535.833013_g8101_i1	300	0	0	0	TARGET_CONTIG	XP_059652600.1	XP_059652600.1 bifunctional 3-dehydroquinate dehydratase/shikimate dehydrogenase, chloroplastic-like [Cornus florida]
+CserDQD_SDH4	NODE_21648_length_2083_cov_1398.299410_g8244_i1	360	0	0	0	TARGET_CONTIG	XP_059652599.1	XP_059652599.1 bifunctional 3-dehydroquinate dehydratase/shikimate dehydrogenase, chloroplastic-like [Cornus florida]
+CserDQD_SDH5	NODE_29040_length_1767_cov_22.706636_g12409_i1	420	0	0	0	TARGET_CONTIG	XP_059652601.1	XP_059652601.1 bifunctional 3-dehydroquinate dehydratase/shikimate dehydrogenase, chloroplastic-like [Cornus florida]

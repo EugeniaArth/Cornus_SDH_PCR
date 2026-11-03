@@ -1,0 +1,29 @@
+rule_set	pair_gene	transcript	size	mm_fwd	mm_rev	tail_fwd	tail_rev	class
+strict  (<=3 mm, perfect 5-nt 3' end, 80-600 bp)	CserDQD_SDH1.1	CserDQD/SDH1.1	120	0	0	20	20	TARGET
+strict  (<=3 mm, perfect 5-nt 3' end, 80-600 bp)	CserDQD_SDH1.2	CserDQD/SDH1.2	180	0	0	20	20	TARGET
+strict  (<=3 mm, perfect 5-nt 3' end, 80-600 bp)	CserDQD_SDH2	CserDQD/SDH2	240	0	0	20	20	TARGET
+strict  (<=3 mm, perfect 5-nt 3' end, 80-600 bp)	CserDQD_SDH3	CserDQD/SDH3	300	0	0	20	20	TARGET
+strict  (<=3 mm, perfect 5-nt 3' end, 80-600 bp)	CserDQD_SDH4	CserDQD/SDH4	360	0	0	20	20	TARGET
+strict  (<=3 mm, perfect 5-nt 3' end, 80-600 bp)	CserDQD_SDH5	CserDQD/SDH5	420	0	0	20	20	TARGET
+medium  (<=4 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH1.1	CserDQD/SDH1.1	120	0	0	20	20	TARGET
+medium  (<=4 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH1.2	CserDQD/SDH1.2	180	0	0	20	20	TARGET
+medium  (<=4 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH2	CserDQD/SDH2	240	0	0	20	20	TARGET
+medium  (<=4 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH3	CserDQD/SDH3	300	0	0	20	20	TARGET
+medium  (<=4 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH4	CserDQD/SDH4	360	0	0	20	20	TARGET
+medium  (<=4 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH5	CserDQD/SDH5	420	0	0	20	20	TARGET
+loose   (<=6 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH1.1	CserDQD/SDH1.1	120	0	0	20	20	TARGET
+loose   (<=6 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH1.2	CserDQD/SDH1.2	180	0	0	20	20	TARGET
+loose   (<=6 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH2	CserDQD/SDH2	240	0	0	20	20	TARGET
+loose   (<=6 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH3	CserDQD/SDH3	300	0	0	20	20	TARGET
+loose   (<=6 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH4	CserDQD/SDH4	360	0	0	20	20	TARGET
+loose   (<=6 mm, perfect 8-nt 3' end, 60-1000 bp)	CserDQD_SDH5	CserDQD/SDH5	420	0	0	20	20	TARGET
+permissive (<=6 mm each, <=12 mm total, perfect 5-nt 3' end, 60-1000 bp)	CserDQD_SDH1.1	CserDQD/SDH1.1	120	0	0	20	20	TARGET
+permissive (<=6 mm each, <=12 mm total, perfect 5-nt 3' end, 60-1000 bp)	CserDQD_SDH1.2	CserDQD/SDH1.2	180	0	0	20	20	TARGET
+permissive (<=6 mm each, <=12 mm total, perfect 5-nt 3' end, 60-1000 bp)	CserDQD_SDH2	CserDQD/SDH2	240	0	0	20	20	TARGET
+permissive (<=6 mm each, <=12 mm total, perfect 5-nt 3' end, 60-1000 bp)	CserDQD_SDH3	CserDQD/SDH2	636	6	4	6	5	CROSS-PRODUCT
+permissive (<=6 mm each, <=12 mm total, perfect 5-nt 3' end, 60-1000 bp)	CserDQD_SDH3	CserDQD/SDH2	309	3	4	7	5	CROSS-PRODUCT
+permissive (<=6 mm each, <=12 mm total, perfect 5-nt 3' end, 60-1000 bp)	CserDQD_SDH3	CserDQD/SDH3	300	0	0	20	20	TARGET
+permissive (<=6 mm each, <=12 mm total, perfect 5-nt 3' end, 60-1000 bp)	CserDQD_SDH3	CserDQD/SDH4	630	6	3	6	8	CROSS-PRODUCT
+permissive (<=6 mm each, <=12 mm total, perfect 5-nt 3' end, 60-1000 bp)	CserDQD_SDH3	CserDQD/SDH4	300	3	3	7	8	CROSS-PRODUCT
+permissive (<=6 mm each, <=12 mm total, perfect 5-nt 3' end, 60-1000 bp)	CserDQD_SDH4	CserDQD/SDH4	360	0	0	20	20	TARGET
+permissive (<=6 mm each, <=12 mm total, perfect 5-nt 3' end, 60-1000 bp)	CserDQD_SDH5	CserDQD/SDH5	420	0	0	20	20	TARGET

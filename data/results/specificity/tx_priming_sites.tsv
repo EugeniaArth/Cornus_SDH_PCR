@@ -1,0 +1,12 @@
+primer	contig	pident	mismatch	sstart	send	strand	is_target_contig
+CserDQD_SDH1.1_Rev	NODE_10980_length_2779_cov_121.715385_g1243_i5	100.0	0	2581	2562	minus	True
+CserDQD_SDH1.2_Fwd	NODE_10980_length_2779_cov_121.715385_g1243_i5	100.0	0	2268	2287	plus	True
+CserDQD_SDH1.2_Rev	NODE_10980_length_2779_cov_121.715385_g1243_i5	100.0	0	2447	2428	minus	True
+CserDQD_SDH2_Fwd	NODE_18517_length_2241_cov_255.196168_g8755_i0	100.0	0	492	511	plus	True
+CserDQD_SDH2_Rev	NODE_18517_length_2241_cov_255.196168_g8755_i0	100.0	0	731	712	minus	True
+CserDQD_SDH3_Fwd	NODE_20612_length_2133_cov_1535.833013_g8101_i1	100.0	0	738	757	plus	True
+CserDQD_SDH3_Rev	NODE_20612_length_2133_cov_1535.833013_g8101_i1	100.0	0	1037	1018	minus	True
+CserDQD_SDH4_Fwd	NODE_21648_length_2083_cov_1398.299410_g8244_i1	100.0	0	1216	1235	plus	True
+CserDQD_SDH4_Rev	NODE_21648_length_2083_cov_1398.299410_g8244_i1	100.0	0	1575	1556	minus	True
+CserDQD_SDH5_Fwd	NODE_29040_length_1767_cov_22.706636_g12409_i1	100.0	0	1048	1067	plus	True
+CserDQD_SDH5_Rev	NODE_29040_length_1767_cov_22.706636_g12409_i1	100.0	0	1467	1448	minus	True

@@ -1,0 +1,92 @@
+LOCUS       PZ518670                2083 bp    mRNA    linear   PLN 15-JUL-2026
+DEFINITION  Cornus sericea isolate Cser_10.07.24 bifunctional 3-dehydroquinate
+            dehydratase/shikimate dehydrogenase SDH4 mRNA, complete cds.
+ACCESSION   PZ518670
+VERSION     PZ518670.1
+DBLINK      BioProject: PRJNA1466783
+KEYWORDS    .
+SOURCE      Cornus sericea
+  ORGANISM  Cornus sericea
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; Cornales; Cornaceae; Cornus.
+REFERENCE   1  (bases 1 to 2083)
+  AUTHORS   Nikonorova,E.
+  TITLE     Identification of 3-dehydroquinate dehydratase/shikimate
+            dehydrogenases from Cornus sericea L. by high-throughput
+            transcriptome sequencing
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2083)
+  AUTHORS   Nikonorova,E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-JUN-2026) Laboratory of Genomics and Biochemistry of
+            Medicinal Plants, All-Russian Scientific Research Institute of
+            Medicinal and Aromatic Plants, Grina St, Moscow 117216, Russia
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: Trans2express v. 1.2
+            Sequencing Technology :: Illumina; Oxford Nanopore
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2083
+                     /organism="Cornus sericea"
+                     /mol_type="mRNA"
+                     /isolate="Cser_10.07.24"
+                     /db_xref="taxon:179117"
+                     /geo_loc_name="Russia: Moscow"
+                     /collection_date="10-Jul-2024"
+     5'UTR           1..133
+     CDS             134..1717
+                     /note="CserDQD_SDH4"
+                     /codon_start=1
+                     /product="bifunctional 3-dehydroquinate
+                     dehydratase/shikimate dehydrogenase SDH4"
+                     /protein_id="YFW25894.1"
+                     /translation="MTLSGIPLATSDLQVGDGGRRNSTMICAPLMADSVDQMLIQMRK
+                     AKELGADLVELRLDSLKNFSPQQDLEILVKQCPLPTLVTYRPTWEGGQYDGDETSRQA
+                     ALHRAMELGADYIDVELKVADEFYNSIKGKRPEKVKIIVSSHNYQNTPSIEEIGNLVA
+                     RIQATGADIVKIATTALDITDSARIFQVLVHSQVPTIGLVMGERGLMSRILSAKFGGF
+                     LTFGALEAGVVSAPGQPTIKDLLELYNFRQIGPDTKVHGVIGKPIGHSKSPHLYNAAF
+                     KSAKFNGIYLPLLVDSVANFLNAYSSPDFVGYSYTIPHKEDGLKCCDEIDPIAKEIGA
+                     ISCMIRRPSDGKLMGYNVDYLGAIGAIEEALGGSSSGSPLAGKLFVVIGAGGAGKALA
+                     YGGMEKGARVVVANRTYEKAKELANKVGGQAITLAELEDFHPEDGMILANTTSVGMKP
+                     KTDLTPISKKALSHYSLVFDAIYTPKWTRLLQEAQETGATVVFGTEMFINQAFVQFER
+                     FTGLPAPKALIRETLVKNT"
+     3'UTR           1718..2083
+ORIGIN      
+        1 tatatctata actatatata tatacaccta actcgccccc aacaaacaca gtctccccac
+       61 caaaagcatt tttcaaaaac ttccccaaac ttctctcacc tgaaaactaa aaactctcca
+      121 aaaacctgaa aaaatgactc tcagtggaat tccgttggcc acatcggatc tccaagtcgg
+      181 cgacggaggc cggaggaatt cgacgatgat ttgcgctccg ttgatggcgg actcagtgga
+      241 tcagatgctc atacagatgc gaaaggcaaa agagctcggc gcggacctcg ttgaacttcg
+      301 attagacagt ttgaagaact tcagtcctca acaagatctc gaaattctcg tcaaacagtg
+      361 tcctttgccc actctagtca cttacagacc aacatgggaa ggtggtcagt atgatgggga
+      421 tgaaaccagt cgacaggctg cactgcaccg agccatggaa ttgggtgctg attatattga
+      481 tgtggagctt aaggtggctg atgaattcta caattccatt aaaggcaaga ggcctgaaaa
+      541 ggtcaaaatc attgtttctt ctcacaacta tcaaaatact ccatctatag aggaaattgg
+      601 caaccttgta gcaagaatac aggctacagg agctgacata gtgaagattg cgacaactgc
+      661 tttagacatc accgattcag cacgtatttt tcaagtactt gtgcattctc aagtaccaac
+      721 aataggactt gtcatgggtg agaggggctt gatgtcacgg atactttctg ccaaatttgg
+      781 tggatttctc acttttggtg ctcttgaggc aggagtggta tccgctcctg ggcaaccaac
+      841 cataaaagat ttgttggagt tgtacaattt cagacagata gggcctgata ccaaagtaca
+      901 tggtgttatt ggaaaaccta ttggtcacag caaaagtcct catctatata acgcagcatt
+      961 taagtcggcc aaatttaatg gaatttattt gcctctgttg gtcgatagtg ttgcaaactt
+     1021 tctcaacgca tattcatctc ctgattttgt gggttacagt tatacaattc cacacaagga
+     1081 agatggactt aaatgctgtg atgagattga tccaattgcc aaggaaatag gagctattag
+     1141 ttgcatgatc aggagaccaa gtgatgggaa gttgatgggt tataatgttg actatcttgg
+     1201 agctattgga gctatagagg aagcactagg aggttcaagt tctggttcac ccctagctgg
+     1261 taaattgttt gttgtcattg gagctggtgg tgctggaaag gcacttgctt atggtggaat
+     1321 ggaaaagggt gcaagagtcg tagttgccaa tcgcacatat gaaaaagcta aagaacttgc
+     1381 caataaagtt gggggacaag ctattactct tgctgaatta gaggatttcc atccagaaga
+     1441 tgggatgatt cttgctaata ccacatctgt aggaatgaaa ccaaaaactg atttgacacc
+     1501 catatctaag aaagcattga gtcactactc cttagttttt gatgccatct acacaccgaa
+     1561 atggaccaga ctcttgcaag aagcacaaga aactggagcc acagttgttt ttgggacgga
+     1621 gatgttcatc aatcaagcat ttgtacagtt tgaaaggttc actggcttgc ccgcaccaaa
+     1681 agcactgatt agggaaacgc tggtaaaaaa cacataagaa ggagctcctt ggctgatctc
+     1741 tctttgcaac tggatggatg tttatccatt acagctaatt catttcaatg tatgagtttt
+     1801 gctatttagc tgttaagttt ttctgttgta taaccaattc tcacttcatt tatgaatgaa
+     1861 actggagacg aatcctttat tcaaatcata tttggaatat tagagcagga aggaaccatg
+     1921 atagcagttt tatgccgcca actccaaaat gttgggataa catttttgat atatgcaatc
+     1981 agatttatac aacatttgga gggttaagtg catgtatggc aacttgattc caatgctcat
+     2041 agctgcaata atctatctaa taaatcttca gtcaacattc gac
+//
+

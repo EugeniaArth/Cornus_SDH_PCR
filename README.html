@@ -352,446 +352,214 @@ display: none;
 </div>
 
 
-<div id="cornus-sericea-dqdsdh-primer-design" class="section level1">
-<h1>Cornus sericea DQD/SDH Primer Design</h1>
-<p><strong>Project:</strong> Design six gene‑specific PCR primer pairs
-to distinguish the six <em>Cornus sericea</em> DQD/SDH genes:
-<code>CserDQD/SDH1.1</code>, <code>CserDQD/SDH1.2</code>,
-<code>CserDQD/SDH2</code>, <code>CserDQD/SDH3</code>,
-<code>CserDQD/SDH4</code>, <code>CserDQD/SDH5</code>.</p>
-<p><strong>Date:</strong> 2026‑10‑29</p>
-<hr />
-<div id="goal-and-strategy" class="section level2">
-<h2>1. Goal and strategy</h2>
-<p><strong>Goal:</strong> Obtain six primer pairs that: - Amplify only
-their intended transcript (no cross‑amplification among the six DQD/SDH
-paralogs). - Produce amplicons spaced ~60 bp apart (120 bp → 420 bp) so
-all six reactions can be resolved together on a 2 % agarose gel. - Pass
-standard primer‑quality filters (GC 40–60 %, no homopolymers ≥4 nt, no
-problematic 3′‑tail composition, no ≥7‑nt self‑complementarity). - Be
-compatible with a single annealing temperature window (54–58 °C) for
-multiplex PCR. - Show zero competent off‑target priming in the whole
-<em>Cornus</em> transcriptome (29 k transcripts, 48 Mb).</p>
-<p><strong>Strategy:</strong> De‑novo primer design using the six
-curated GenBank transcripts (PZ518666–PZ518671). No attempt was made to
-reuse existing primers from other species because they showed no
-similarity (≥2 mismatches) to the Cornus sequences.</p>
-<hr />
-</div>
-<div id="data" class="section level2">
-<h2>2. Data</h2>
+<div id="gene-specific-pcr-primers-for-six-cornus-sericea-dqdsdh-genes" class="section level1">
+<h1>Gene-specific PCR primers for six <em>Cornus sericea</em> DQD/SDH
+genes</h1>
+<p>Six primer pairs that discriminate <code>CserDQD/SDH1.1</code>,
+<code>SDH1.2</code>, <code>SDH2</code>, <code>SDH3</code>,
+<code>SDH4</code> and <code>SDH5</code> in one multiplex, designed from
+the <em>C. sericea</em> transcriptome and checked for specificity
+entirely locally.</p>
+<p><strong>Deliverables</strong></p>
 <table>
 <colgroup>
-<col width="31%" />
-<col width="68%" />
+<col width="50%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>File</th>
-<th>Description</th>
+<th>Contents</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="FINAL_primer_pairs.tsv"><code>FINAL_primer_pairs.tsv</code></a></td>
-<td>Machine‑readable primer table (gene, sequence, position, GC %, Tm,
-amplicon size).</td>
+<td><code>data/results/FINAL_primers.fasta</code></td>
+<td>the 12 primers, ready for bulk ordering</td>
 </tr>
 <tr class="even">
-<td><a href="FINAL_primers.fasta"><code>FINAL_primers.fasta</code></a></td>
-<td>Twelve primers in FASTA format, ready for ordering‑portal bulk
-upload.</td>
+<td><code>data/results/FINAL_primer_pairs.tsv</code></td>
+<td>sequences, positions, regions, GC, Tm, product sizes</td>
 </tr>
 <tr class="odd">
-<td><a href="data/results/"><code>data/results/</code></a></td>
-<td>Copies of the final primer files.</td>
+<td><code>data/results/BACKUP_SDH3_PAIR.txt</code></td>
+<td>drop-in replacement SDH3 pair with no competent foreign sites</td>
 </tr>
 <tr class="even">
-<td><a href="data/input/"><code>data/input/</code></a></td>
-<td>Input sequences, coordinates, transcriptome assembly.</td>
+<td><code>data/results/VALIDATION_auto_report.md</code></td>
+<td>auto-generated validation of the set</td>
 </tr>
 <tr class="odd">
-<td><a href="scripts/"><code>scripts/</code></a></td>
-<td>Reproducible Python scripts for primer generation, validation, and
-specificity checking.</td>
+<td><code>data/results/specificity/</code></td>
+<td>evidence for all specificity checks, machine-readable</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Gene mapping:</strong></p>
+<div id="start-here" class="section level2">
+<h2>Start here</h2>
 <table>
 <colgroup>
-<col width="8%" />
-<col width="26%" />
-<col width="19%" />
-<col width="16%" />
-<col width="11%" />
-<col width="16%" />
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Report</th>
+<th>Read it for</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="reports/01_inputs_and_annotation.md">01</a></td>
+<td>which transcripts are the six genes, coordinate verification, why no
+existing lab primer could be reused</td>
+</tr>
+<tr class="even">
+<td><a href="reports/02_sequence_survey.md">02</a></td>
+<td>where the paralogs actually differ; the SDH1.1 constraint</td>
+</tr>
+<tr class="odd">
+<td><a href="reports/03_primer_design.md">03</a></td>
+<td>design rules and the final twelve primers</td>
+</tr>
+<tr class="even">
+<td><a href="reports/04_specificity_checks.md">04</a></td>
+<td>the four-layer specificity screen and the SDH3 cross-amplification
+finding</td>
+</tr>
+<tr class="odd">
+<td><a href="reports/05_sdh3_backup_pair.md">05</a></td>
+<td>the backup SDH3 pair and how it was verified</td>
+</tr>
+<tr class="even">
+<td><a href="reports/06_lab_plan.md">06</a></td>
+<td>ordering, cycling, gel expectations, failure modes</td>
+</tr>
+<tr class="odd">
+<td><a href="reports/07_reproducibility.md">07</a></td>
+<td>environment, how to rerun, inventory, open items</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="the-result-in-one-table" class="section level2">
+<h2>The result in one table</h2>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Gene</th>
-<th>GenBank accession</th>
-<th>Length (bp)</th>
-<th>5′‑UTR bp</th>
-<th>CDS bp</th>
-<th>3′‑UTR bp</th>
+<th>Forward</th>
+<th>Reverse</th>
+<th>Product</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>CserDQD/SDH1.1</td>
-<td>PZ518666</td>
-<td>1885</td>
-<td>130</td>
-<td>1497</td>
-<td>258</td>
+<td>GTTCACTGGTGGATTAAGTG</td>
+<td>ATAAGCACCTTACTTGAAGC</td>
+<td>120 bp</td>
 </tr>
 <tr class="even">
 <td>CserDQD/SDH1.2</td>
-<td>PZ518667</td>
-<td>2779</td>
-<td>130</td>
-<td>1503</td>
-<td>1146</td>
+<td>GCAAGCAGATTTCAGAGCTG</td>
+<td>ACTCAGCAACCCAATAGTGC</td>
+<td>180 bp</td>
 </tr>
 <tr class="odd">
 <td>CserDQD/SDH2</td>
-<td>PZ518668</td>
-<td>2241</td>
-<td>224</td>
-<td>1566</td>
-<td>451</td>
+<td>GCACTTCGATTAGCCATGGA</td>
+<td>TGCCACATCAGTGATATCCG</td>
+<td>240 bp</td>
 </tr>
 <tr class="even">
 <td>CserDQD/SDH3</td>
-<td>PZ518669</td>
-<td>2133</td>
-<td>240</td>
-<td>1599</td>
-<td>294</td>
+<td>TGGAGCCGACATTGTGAAGA</td>
+<td>TGACCGACAGGCTTTCCAAT</td>
+<td>300 bp</td>
 </tr>
 <tr class="odd">
 <td>CserDQD/SDH4</td>
-<td>PZ518670</td>
-<td>2083</td>
-<td>133</td>
-<td>1584</td>
-<td>366</td>
+<td>AGAGGAAGCACTAGGAGGTT</td>
+<td>AAGAGTCTGGTCCATTTCGG</td>
+<td>360 bp</td>
 </tr>
 <tr class="even">
 <td>CserDQD/SDH5</td>
-<td>PZ518671</td>
-<td>1767</td>
-<td>112</td>
-<td>1560</td>
-<td>95</td>
+<td>ACTTGCTCAGTCCATAGGTG</td>
+<td>ACCTCAGTCACAGGAATTCG</td>
+<td>420 bp</td>
 </tr>
 </tbody>
 </table>
-<hr />
-</div>
-<div id="design-pipeline-scripts-and-steps" class="section level2">
-<h2>3. Design pipeline (scripts and steps)</h2>
-<p>All scripts are available in <code>scripts/</code>; the main workflow
-is reproducible.</p>
-<div id="primercandidate-generation-design_final_pairs.py" class="section level3">
-<h3>3.1. Primer‑candidate generation
-(<code>design_final_pairs.py</code>)</h3>
+<p>All 20 nt. Sizes are spaced 60 bp apart so the six amplicons separate
+on 2 % agarose. GenBank records: PZ518666 (SDH1.1), PZ518667 (SDH1.2),
+PZ518668 (SDH2), PZ518669 (SDH3), PZ518670 (SDH4), PZ518671 (SDH5).</p>
+<p><strong>Two things to know before ordering</strong> (details in
+reports 04-06):</p>
 <ul>
-<li>Slides a 20‑nt window along each whole transcript.</li>
-<li>Retains only windows <strong>unique</strong> to that transcript (no
-exact match in any of the other five).</li>
-<li>Applies quality filters:
-<ul>
-<li>GC 40–60 %</li>
-<li>No homopolymer ≥4 nt</li>
-<li>No 3′‑tail <code>TTTT</code>/<code>AAAA</code> (prone to
-mis‑priming)</li>
-<li>No <code>GGG</code>/<code>CCC</code> at the 3′ end (stable
-mis‑extension)</li>
-<li>No inverted self‑complementarity ≥7 nt</li>
-<li>Acceptable 3′‑terminal base composition (avoid T/A as last
-base)</li>
-</ul></li>
-<li>Calculates SantaLucia 1998 nearest‑neighbour Tm (250 nM primer,
-50 mM Na⁺).</li>
-<li>Pairs forward‑reverse candidates 120–500 bp apart with ΔTm
-≤ 4 °C.</li>
-</ul>
-<p><strong>Output per gene:</strong> thousands of candidate pairs.</p>
-</div>
-<div id="multiplexladder-assignment" class="section level3">
-<h3>3.2. Multiplex‑ladder assignment</h3>
-<p>Each gene is assigned a target amplicon size to produce a
-60‑bp‑spaced ladder:</p>
-<table>
-<thead>
-<tr class="header">
-<th>Gene</th>
-<th>Target size (bp)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SDH1.1</td>
-<td>120</td>
-</tr>
-<tr class="even">
-<td>SDH1.2</td>
-<td>180</td>
-</tr>
-<tr class="odd">
-<td>SDH2</td>
-<td>240</td>
-</tr>
-<tr class="even">
-<td>SDH3</td>
-<td>300</td>
-</tr>
-<tr class="odd">
-<td>SDH4</td>
-<td>360</td>
-</tr>
-<tr class="even">
-<td>SDH5</td>
-<td>420</td>
-</tr>
-</tbody>
-</table>
-<p>From each candidate pool the pair closest to the target size is
-selected, provided it does not form a ≥8‑nt 3′‑terminal dimer with any
-primer already chosen.</p>
-</div>
-<div id="special-handling-of-sdh1.1" class="section level3">
-<h3>3.3. Special handling of SDH1.1</h3>
-<p>SDH1.1 shares its 5′‑UTR and most of its CDS with SDH1.2; only a
-<strong>19‑nt block</strong> near the 3′ end is unique. Consequently no
-fully‑unique pair exists. The pipeline falls back to a
-<strong>one‑sided‑specific</strong> design: - Forward primer sits inside
-the unique block (unique to SDH1.1). - Reverse primer is shared with
-SDH1.2 but cannot amplify SDH1.2 because the forward primer is absent
-there.</p>
-</div>
-<div id="insilico-validation-validate_final_primers.py" class="section level3">
-<h3>3.4. In‑silico validation
-(<code>validate_final_primers.py</code>)</h3>
-<ul>
-<li>Exact‑match PCR on the six transcripts: confirms no
-cross‑amplification.</li>
-<li>Inter‑primer dimer check: no ≥8‑nt 3′‑terminal complementarity among
-the 12 primers.</li>
-<li>Self‑dimer and hairpin checks.</li>
+<li>The SDH3 pair is specific at normal stringency but retains
+mismatch-tolerant sites on SDH4 (300 bp) and SDH2 (309 bp). Anneal at 58
+°C, sequence the band, or order the backup pair.</li>
+<li>SDH1.1 has only 38 unique nucleotides in these transcripts, so its
+pair uses a unique forward anchor and a reverse site shared with SDH1.2.
+A 314 bp SDH1.2 band can appear in the tube.</li>
 </ul>
 </div>
-<div id="specificity-validation-fourlayer-check" class="section level3">
-<h3>3.5. Specificity validation (four‑layer check)</h3>
-<p>All analyses were run <strong>locally</strong>; no data were uploaded
-to external services.</p>
-<table>
-<colgroup>
-<col width="20%" />
-<col width="23%" />
-<col width="20%" />
-<col width="35%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Check</th>
-<th>Script</th>
-<th>Scope</th>
-<th>Key result</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1 – BLAST‑like, six curated transcripts</td>
-<td><code>run_primer_blast_check.py</code></td>
-<td>Six transcripts</td>
-<td>All six pairs specific (no cross‑products under ≤3 mm, 5‑nt 3′‑run
-rule).</td>
-</tr>
-<tr class="even">
-<td>2 – BLAST‑like, whole transcriptome</td>
-<td><code>run_transcriptome_check.py</code></td>
-<td>29 k transcripts, 48 Mb</td>
-<td>Only 11 full‑length primer hits, all on the five DQD/SDH contigs (0
-off‑family).</td>
-</tr>
-<tr class="odd">
-<td>3 – Exhaustive seed‑free scan, whole transcriptome</td>
-<td><code>tx_exhaustive_scan.py</code></td>
-<td>Every 20‑nt window (47.6 M positions)</td>
-<td>0 products on unrelated transcripts even under ≤8 mismatches, 3‑nt
-3′‑run rule.</td>
-</tr>
-<tr class="even">
-<td>4 – Exhaustive seed‑free scan, six curated transcripts</td>
-<td><code>curated_exhaustive_scan.py</code></td>
-<td>Every window vs all six transcripts</td>
-<td>Under permissive rules (≤6 mm, ≥5‑nt 3′‑run) 0 off-target.</td>
-</tr>
-</tbody>
-</table>
+<div id="quickstart" class="section level2">
+<h2>Quickstart</h2>
+<pre class="sh"><code>python3 -m pip install numpy            # the only non-stdlib requirement
+./scripts/run_all.sh --no-tx            # stages 1-4 on committed data (Checks 1 and 4)
+./scripts/run_all.sh                    # adds stage 5 and the transcriptome-wide Checks 2, 3, 3b</code></pre>
+<p>The transcriptome-wide work reads the assembly from
+<code>data/external/</code>, which is not committed, so a fresh clone
+needs those files placed there first — see
+<code>data/external/README.md</code> for names and symlink commands.
+Those scripts stop with a clear message when a file is absent instead of
+producing a partial result.</p>
+<p>Runs 1-4 of the pipeline need only what is committed in
+<code>data/raw/</code>. Each script also works on its own; they are in
+<code>scripts/step1_inputs/</code> …
+<code>scripts/step5_sdh3_backup/</code>.</p>
+<p>Scripts locate their own files through <code>scripts/paths.py</code>,
+so any script can be run from any working directory, and the folder can
+be moved or cloned anywhere without editing paths.</p>
 </div>
+<div id="reproducing-the-deliverable" class="section level2">
+<h2>Reproducing the deliverable</h2>
+<p><code>design_final_pairs.py</code> regenerates
+<code>FINAL_primers.fasta</code> and <code>FINAL_primer_pairs.tsv</code>
+byte for byte from <code>data/raw/DQD_SDH_possible_nt.fasta</code> plus
+the verified coordinate table. That was confirmed after the project was
+restructured: the regenerated primers hash identically to the committed
+ones, and 22 of the 26 specificity evidence files do as well (report 07
+lists the exceptions and why).</p>
 </div>
-<div id="final-primer-set" class="section level2">
-<h2>4. Final primer set</h2>
-<table>
-<colgroup>
-<col width="6%" />
-<col width="11%" />
-<col width="18%" />
-<col width="23%" />
-<col width="8%" />
-<col width="6%" />
-<col width="9%" />
-<col width="15%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Gene</th>
-<th>Direction</th>
-<th>Sequence (5′→3′)</th>
-<th>Position (transcript)</th>
-<th>Region</th>
-<th>GC %</th>
-<th>Tm (°C)</th>
-<th>Amplicon (bp)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>CserDQD/SDH1.1</td>
-<td>F</td>
-<td><code>GTTCACTGGTGGATTAAGTG</code></td>
-<td>1570–1589</td>
-<td>CDS</td>
-<td>45.0</td>
-<td>49.5</td>
-<td><strong>120</strong></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>R</td>
-<td><code>ATAAGCACCTTACTTGAAGC</code></td>
-<td>1670–1689</td>
-<td>3′UTR</td>
-<td>40.0</td>
-<td>48.6</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>CserDQD/SDH1.2</td>
-<td>F</td>
-<td><code>GCAAGCAGATTTCAGAGCTG</code></td>
-<td>2268–2287</td>
-<td>3′UTR</td>
-<td>50.0</td>
-<td>53.1</td>
-<td><strong>180</strong></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>R</td>
-<td><code>ACTCAGCAACCCAATAGTGC</code></td>
-<td>2428–2447</td>
-<td>3′UTR</td>
-<td>50.0</td>
-<td>54.0</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>CserDQD/SDH2</td>
-<td>F</td>
-<td><code>GCACTTCGATTAGCCATGGA</code></td>
-<td>492–511</td>
-<td>CDS</td>
-<td>50.0</td>
-<td>54.0</td>
-<td><strong>240</strong></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>R</td>
-<td><code>TGCCACATCAGTGATATCCG</code></td>
-<td>712–731</td>
-<td>CDS</td>
-<td>50.0</td>
-<td>54.0</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>CserDQD/SDH3</td>
-<td>F</td>
-<td><code>TGGAGCCGACATTGTGAAGA</code></td>
-<td>738–757</td>
-<td>CDS</td>
-<td>50.0</td>
-<td>55.2</td>
-<td><strong>300</strong></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>R</td>
-<td><code>TGACCGACAGGCTTTCCAAT</code></td>
-<td>1018–1037</td>
-<td>CDS</td>
-<td>50.0</td>
-<td>55.1</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>CserDQD/SDH4</td>
-<td>F</td>
-<td><code>AGAGGAAGCACTAGGAGGTT</code></td>
-<td>1216–1235</td>
-<td>CDS</td>
-<td>50.0</td>
-<td>53.1</td>
-<td><strong>360</strong></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>R</td>
-<td><code>AAGAGTCTGGTCCATTTCGG</code></td>
-<td>1556–1575</td>
-<td>CDS</td>
-<td>50.0</td>
-<td>52.8</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>CserDQD/SDH5</td>
-<td>F</td>
-<td><code>ACTTGCTCAGTCCATAGGTG</code></td>
-<td>1048–1067</td>
-<td>CDS</td>
-<td>50.0</td>
-<td>53.0</td>
-<td><strong>420</strong></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>R</td>
-<td><code>ACCTCAGTCACAGGAATTCG</code></td>
-<td>1448–1467</td>
-<td>CDS</td>
-<td>50.0</td>
-<td>53.2</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Tm note:</strong> SantaLucia 1998 nearest‑neighbour values at
-250 nM primer, 50 mM Na⁺. For high‑salt Taq buffers, add ~3–5 °C.</p>
-<p><strong>Amplicon ladder (multiplex‑ready):</strong></p>
-<pre><code>SDH1.1  |■■ 120 bp
-SDH1.2  |■■■ 180 bp
-SDH2    |■■■■ 240 bp
-SDH3    |■■■■■ 300 bp
-SDH4    |■■■■■■ 360 bp
-SDH5    |■■■■■■■ 420 bp
-         ↑ ~60 bp apart → all six bands resolve on 2% agarose or a TapeStation</code></pre>
+<div id="not-in-this-repository" class="section level2">
+<h2>Not in this repository</h2>
+<ul>
+<li>48 MB transcriptome FASTA and GFF3 annotation, and the BLAST
+databases built from them (<code>data/external/</code>,
+gitignored).</li>
+<li>Vector-screening work for the NCBI submission — that is a separate
+task with its own tools and outputs, kept in the sibling
+<code>vector_work/</code> directory.</li>
+<li>Photos, InterProScan output and literature spreadsheets, kept in the
+sibling <code>reference/</code>.</li>
+<li>Superseded material: <code>archive/</code> inside this folder
+(redundant duplicates, gitignored) and
+<code>PCR_SDH/archive/old_layout_20261102/</code> outside it (the
+pre-repository layout, with a manifest mapping every file to its
+replacement here). Earlier rounds remain in
+<code>PCR_SDH/backup/</code>. Nothing was deleted during the
+reorganisation.</li>
+</ul>
 </div>
 </div>
 

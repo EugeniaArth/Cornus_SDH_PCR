@@ -1,0 +1,96 @@
+curl: (56) OpenSSL SSL_read: OpenSSL/3.6.1: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+ ERROR:  curl command failed ( Thu Oct 29 11:56:46 MSK 2026 ) with: 56
+-X POST https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi -d db=nuccore&id=PZ518669&rettype=gb&retmode=text&tool=edirect&edirect=22.4&edirect_os=Darwin&email=eugenianikonorova%40Eugenias-MacBook-Pro.local
+HTTP/1.0 200 OK
+LOCUS       PZ518669                2133 bp    mRNA    linear   PLN 15-JUL-2026
+DEFINITION  Cornus sericea isolate Cser_10.07.24 bifunctional 3-dehydroquinate
+            dehydratase/shikimate dehydrogenase SDH3 mRNA, complete cds.
+ACCESSION   PZ518669
+VERSION     PZ518669.1
+DBLINK      BioProject: PRJNA1466783
+KEYWORDS    .
+SOURCE      Cornus sericea
+  ORGANISM  Cornus sericea
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae;
+            Pentapetalae; asterids; Cornales; Cornaceae; Cornus.
+REFERENCE   1  (bases 1 to 2133)
+  AUTHORS   Nikonorova,E.
+  TITLE     Identification of 3-dehydroquinate dehydratase/shikimate
+            dehydrogenases from Cornus sericea L. by high-throughput
+            transcriptome sequencing
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 2133)
+  AUTHORS   Nikonorova,E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-JUN-2026) Laboratory of Genomics and Biochemistry of
+            Medicinal Plants, All-Russian Scientific Research Institute of
+            Medicinal and Aromatic Plants, Grina St, Moscow 117216, Russia
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: Trans2express v. 1.2
+            Sequencing Technology :: Illumina; Oxford Nanopore
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..2133
+                     /organism="Cornus sericea"
+                     /mol_type="mRNA"
+                     /isolate="Cser_10.07.24"
+                     /db_xref="taxon:179117"
+                     /geo_loc_name="Russia: Moscow"
+                     /collection_date="10-Jul-2024"
+     5'UTR           1..240
+     CDS             241..1839
+                     /note="CserDQD_SDH3"
+                     /codon_start=1
+                     /product="bifunctional 3-dehydroquinate
+                     dehydratase/shikimate dehydrogenase SDH3"
+                     /protein_id="YFW25893.1"
+                     /translation="MASGGFSFATSDAQTSSSGVRSNPTLLCTPLMGTTVDQMLIEMG
+                     KAKEIGADLVEIRLDCLRQFSPQQDLEILIKKSPLPTVVTYRPIWEGGQYEGDENKRQ
+                     DALKLAMELGADYIDVELQVAHEFNNSIYEKKPDKFKVIVSSHNFHNTPSAEAIGNLL
+                     ARIQATGADIVKIATTALDITDVARVFQITVHSQIPTIGIVMGERGLISRLLSPKYGG
+                     YLTYGALEAGAISAPGQPTAKDLLDLYNFRLIKPDTKVYGIIGKPVGHSKSPLLFNEA
+                     FKKIGLNSVYVHLLVDDVAKFFDTYCSLDFAGFSCTIPHKEAALKCMNEIDPIAKKIG
+                     AINNIVRRPDLTLTAYNTDYIGAISAIEDGLRGSNGTIPAGASPLAGKLFVVLGAGGA
+                     GKSLAYGAKQKGARVVVANRTFERAKELADKVDGKAMTLDEINDFHPEEGMVLANTTS
+                     VGMKPNIDATPISKEALKHYTLVFDAIYTPKDTRLLREAKECGAIIVYGTEMLIRQGF
+                     EQYKNFTGLPAPEELFRDLMSRHA"
+     3'UTR           1840..2133
+ORIGIN      
+        1 cttggtcagt cttcttttga aattaaggtt aaatcctatc aaactcccaa gtcccaacct
+       61 acctaccctt cactaacaag aacatttgtt ggtgaaccct cctctgagaa ataaatactc
+      121 tcacaactct aatgcttact atattctctc ttttagcata cacataccaa gtcttttaag
+      181 cacaacaaaa taaagttaaa cactttacca agaaacacaa ccagaccaaa ctcattagca
+      241 atggcctcag gaggcttttc gtttgctact tcggatgctc aaacgagtag tagtggagtt
+      301 cggagcaatc cgaccttgct gtgcactcca ttgatgggca ccacagttga tcagatgctg
+      361 attgagatgg gaaaggcgaa ggagattgga gctgaccttg tggagatcag gctggattgt
+      421 ctcaggcagt tcagtcccca acaagatctt gaaatcctca tcaagaagtc tcctttgccc
+      481 actgttgtca cttacaggcc aatttgggaa ggcggtcagt atgaaggtga tgaaaacaag
+      541 cgccaagatg cacttaagct agctatggaa ttgggagctg attacattga tgttgagctt
+      601 caggttgctc atgagtttaa caattccatt tacgaaaaga agccggacaa gttcaaggtc
+      661 attgtgtctt ctcacaactt tcacaatact ccatctgctg aggctattgg caatctattg
+      721 gcaagaattc aagctactgg agccgacatt gtgaagattg caacaactgc cttagatatc
+      781 acagatgtgg ctcgcgtttt ccaaataact gtgcattccc aaattccaac aataggaatt
+      841 gttatgggtg agaggggctt gatttcacgg ctacttagcc ccaaatatgg tggatatctc
+      901 acttatggtg cacttgaggc gggtgctata tcagcccccg ggcaaccaac agcaaaagat
+      961 ttgttggatt tatacaactt cagactgata aagccagata ccaaagtcta tggcatcatt
+     1021 ggaaagcctg tcggtcacag caaaagtcct cttttattca atgaagcatt caagaaaatt
+     1081 ggtctgaact cagtttatgt gcacttgttg gtggatgatg ttgcaaagtt cttcgatacc
+     1141 tactgttccc ttgattttgc tggattcagt tgtacaattc cccacaaaga ggctgcactt
+     1201 aaatgcatga atgagattga ccctattgcc aagaaaattg gagctattaa taatattgtt
+     1261 aggagacctg acttaacgct aactgcttac aacactgact atattggtgc catttctgct
+     1321 attgaagatg gactacgagg ctcaaatggc acaatccctg ctggtgcttc acccctggct
+     1381 ggtaaattgt ttgtcgtcct gggagctggt ggcgctggca agtcacttgc ctatggtgca
+     1441 aaacaaaagg gagcaagagt tgtagttgcc aatcgtacat tcgagcgagc taaggaactg
+     1501 gctgacaaag ttgacggaaa agccatgacg cttgatgaaa ttaatgattt ccacccagaa
+     1561 gaagggatgg tccttgcaaa cactacatct gtaggaatga aacccaacat tgatgcaacc
+     1621 cccatttcta aggaagctct taagcattac actttagttt ttgatgccat ttacacacca
+     1681 aaagacacca gactattgcg agaagcaaaa gaatgtggag ccattattgt ttatgggacg
+     1741 gagatgttga tccgacaggg ctttgaacaa tacaagaact tcactggttt gccagctccg
+     1801 gaagaactct ttagggatct catgtcaaga cacgcataag agagagtctg cgtttatcca
+     1861 tcacagccca agttgctttg aattctgaat tttgtgttta gttgttgagt agttgaattt
+     1921 attttgttgt atgaataaat ttttcatttc atgtcaattg aaggacataa acattgtacc
+     1981 tttaaagatt ttcaatcctg ggcttgagca ttattagcta aaaaaggaag agccaggaca
+     2041 tgaaactatg cttgttgaga aaatggaatg gcaagaaata gattcatata gttaattcca
+     2101 actggggtta tggctttctc tacaaaaaaa aaa
+//
