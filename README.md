@@ -6,6 +6,11 @@ entirely locally.
 
 **Deliverables**
 
+
+NB!!! The transcriptome-wide work reads the assembly needs to be downloaded from
+https://drive.google.com/drive/folders/1aDozkY-kDjnAsJzh3PdtklgKbpfJFE5D?usp=sharing
+to folder `data/external/`, which is not committed
+
 | File | Contents |
 |---|---|
 | `data/results/FINAL_primers.fasta` | the 12 primers, ready for bulk ordering |
@@ -56,9 +61,6 @@ python3 -m pip install numpy            # the only non-stdlib requirement
 ./scripts/run_all.sh                    # adds stage 5 and the transcriptome-wide Checks 2, 3, 3b
 ```
 
-NB!!! The transcriptome-wide work reads the assembly needs to be downloaded from
-https://drive.google.com/drive/folders/1aDozkY-kDjnAsJzh3PdtklgKbpfJFE5D?usp=sharing
-to`data/external/`, which is not committed
 
 Runs 1-4 of the pipeline need only what is committed in `data/raw/`. Each script also works on its
 own; they are in `scripts/step1_inputs/` … `scripts/step5_sdh3_backup/`.
