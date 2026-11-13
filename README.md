@@ -4,9 +4,6 @@ Six primer pairs that discriminate `CserDQD/SDH1.1`, `SDH1.2`, `SDH2`, `SDH3`, `
 in one multiplex, designed from the *C. sericea* transcriptome and checked for specificity
 entirely locally.
 
-**Deliverables**
-
-
 NB!!! The transcriptome-wide work reads the assembly needs to be downloaded from
 https://drive.google.com/drive/folders/1aDozkY-kDjnAsJzh3PdtklgKbpfJFE5D?usp=sharing
 to folder `data/external/`, which is not committed
@@ -30,6 +27,7 @@ to folder `data/external/`, which is not committed
 | [05](reports/05_sdh3_backup_pair.md) | the backup SDH3 pair and how it was verified |
 | [06](reports/06_lab_plan.md) | ordering, cycling, gel expectations, failure modes |
 | [07](reports/07_reproducibility.md) | environment, how to rerun, inventory, open items |
+
 
 ## The result in one table
 
@@ -80,3 +78,82 @@ committed ones, and 22 of the 26 specificity evidence files do as well
 
 * 48 MB transcriptome FASTA and GFF3 annotation, and the BLAST databases built from them
   (`data/external/`, gitignored).
+  
+## Housekeeping genes
+
+Six family‑level primer pairs designed to co‑amplify all paralogs of each reference‑gene family.
+
+
+- **ACT** — Actin (2 contigs)
+- **BTUB** — β-tubulin (2 contigs)
+- **GAPDH** — Glyceraldehyde-3-phosphate dehydrogenase, cytosolic (2 contigs)
+- **H3** — Histone H3 (6 contigs: H3.2 ×4, H3.3 ×2)
+- **eIF5A** — Eukaryotic translation initiation factor 5A (2 contigs)
+- **polyUb** — Polyubiquitin (2 contigs, Ubiquitinx6)
+
+| Folder | Strategy | Pairs | Scope | Amplicons |
+| `housekeeping/` | **Family‑level** | 6 | total‑family signal | 90–151 bp |
+
+Scripts for housekeeping genes search are in scripts/step6_housekeeping folder 
+
+## Design Method
+
+1. **Target curation**:
+     BLASTn of *Agrostemma githago* ortholog sequences (Table S7 (57 contigs across 9 families), 
+  reference:  Bielecka, Monika, et al. "Reference gene stability in Agrostemma githago using quantitative real-time PCR." 
+   International Journal of Molecular Sciences 27.2 (2026): 889.)
+   - Keyword search in Cornus GFF3 annotation using product‑name patterns
+   - HMM validation with Pfam profiles 
+   PF00125 (Histone) -> H3 (filtered to canonical H3.2/H3.3 by NR product)
+   PF01287 (eIF-5a) -> eIF5A (corrected; replaces wrongly-used PF01331/mRNA_cap_enzyme)
+   PF00009 (GTP_EFTU) -> EF-1a / TEF1 / organellar EF-Tu (classified by NR product)
+   PF00240 (ubiquitin) -> ubiquitin fold; polyubiquitin by domain architecture
+   - Product-annotation based filtering to canonical isoforms only
+
+2. **Primer design**:
+   - MAFFT protein alignment → codon-level nucleotide alignment
+   - Sliding 20-mer window: count mismatches across all family members using real transcript sequences
+   - Pick forward + reverse with max coverage, Tm 50‑60 °C, GC 40‑60%, amplicon 70‑250 bp
+   - Each primer is allowed ≤2–5 mismatches on some family members (indel/codon‑shift tolerance)
+   - All 6 pairs validated: zero exact foreign amplicons across the whole transcriptome (29,124 contigs)
+
+## Summary Table
+
+| Family | BLAST hits | Keyword hits | Intersection | HMM validated | Notes |
+|--------|-----------|-------------|-------------|---------------|-------|
+| ACT (Actin) | 2 | 155 | 2 | 0 |  |
+| BTUB (Beta-tubulin) | 3 | 32 | 2 | 0 |  |
+| EF1a (Elongation factor 1-alpha) | 4 | 26 | 4 | 0 | EF1a: 0 |
+| GAPDH (GAPDH cytosolic) | 2 | 7 | 2 | 0 |  |
+| H3 (Histone H3) | 0 | 11 | 0 | 6 | canonical H3: 6 (45 raw PF00125 hits) |
+| eIF5A (eIF5A) | 0 | 3 | 0 | 3 | eIF5A (PF01287): 3 |
+| TEF1 (Translation elongation factor 1) | 0 | 12 | 0 | 0 | TEF1: 0 |
+| UBQ (Ubiquitin / polyubiquitin) | 0 | 472 | 0 | 54 | polyUb: 12/54 |
+
+
+## Result
+
+| Gene | Forward | Reverse | Product |
+|---|---|---|---|
+| ACT | ACTGGTGTGATGGTTGGCAT | GCCAGATCTTCTCCATGTCA | 139 bp |
+| BTUB | TGCAGATGAGTGCATGGTTC | AGATCACCAAAGCTTGGGGT | 90 bp |
+| GAPDH | ACTGGAGAGGTGGAAGAGCT | ATCAACAGTGGGAACACGGA | 134 bp |
+| H3 | GCTCAGGACTTCAAGACTGA | TCCTTGGGCATGATTGTCAC | 146 bp |
+| polyUb  | ACAACATCCAGAAGGAGTCG | ATCGTGTCCGAGCTCTCCAC | 121 bp |
+
+- **EF‑1α**: A family‑level pair for all 10 EF‑1α paralogs was not feasible (too divergent).
+-**TEF1**: confirmed absent** in *C. sericea* (0 of 46 PF00009 GTP_EFTU hits classify as TEF1 by NR product)
+
+
+## Key Files
+
+| Path | Description |
+|------|-------------|
+| `data/housekeeping/family_candidates_filtered/ ACT_filtered.fasta` … `polyUb_filtered.fasta` | Filtered contig sequences per family (input, from curation) |
+| `data/housekeeping/family_candidates_filtered/filtered_summary.tsv` | Product annotation for each curated contig |
+| `data/housekeeping/primers/results/FAMILY_primer_pairs.tsv` | 6 family-level primer pairs |
+| `data/housekeeping/primers/results/FAMILY_primers.fasta` | 12 primer sequences |
+| `data/housekeeping/primers/results/FAMILY_PRIMER_REPORT.md` | Full report with design, validation, and recommendations |
+| `data/housekeeping/primers/specificity/sensitivuty_report.md` | Per-pair specificity details |
+
+

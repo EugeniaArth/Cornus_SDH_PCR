@@ -3,8 +3,7 @@
 ## Overview
 
 Six family‑level primer pairs designed to co‑amplify all paralogs of each reference‑gene family.
-Alongside the existing 14 variant‑specific pairs (GAPDH×2, EF‑1α×10, polyUb×2), these provide
-options for total‑family signal normalisation.
+
 
 | Family | Description | Members | Fwd Tm | Rev Tm | Product | Fwd cov | Rev cov |
 |--------|------------|---------|--------|--------|---------|---------|---------|
@@ -60,8 +59,7 @@ Reverse: `GCCAGATCTTCTCCATGTCA`
 
 **Interpretation**
 Fwd exact sites: 3 contigs — the forward 20‑mer appears perfectly in 3 transcriptome contigs (2 family  members + possibly 1 foreign)
-Family amplicons: 1 — only 1 family member has both forward and reverse at exact‑match stringency,      
-   facing correctly, within the size window. That member is the reference sequence
+Family amplicons: 1 — only 1 family member has both forward and reverse at exact‑match stringency, facing correctly, within the size window. That member is the reference sequence
 No foreign amplicons — zero off‑target contigs have an exact forward+reverse hit. 
 Unamplified family members: N — the remaining family members have small sequence differences (≤2–5 mismatches) in the primer binding sites.
 They will still amplify in a normal PCR at 50–55 °C annealing, because the mismatches are internal, not at the 3′‑anchor. 
