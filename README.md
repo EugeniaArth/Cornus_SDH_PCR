@@ -165,14 +165,13 @@ Scripts for housekeeping genes search are in scripts/step6_housekeeping folder
 
 ## More detailed
 
-
-| Family | Description | Members | Fwd Tm | Rev Tm | Product | Fwd cov | Rev cov |
-|--------|------------|---------|--------|--------|---------|---------|---------|
-| ACT | Actin | 2 | 55.9°C | 53.1°C | 139 bp | 2/2 | 1/2 |\n
-| BTUB | Beta-tubulin | 2 | 54.7°C | 54.6°C | 90 bp | 2/2 | 1/2 |\n
-| GAPDH | GAPDH cytosolic | 2 | 55.9°C | 55.1°C | 134 bp | 2/2 | 1/2 |\n
-| H3 | Histone H3 | 6 | 52.7°C | 54.0°C | 146 bp | 6/6 | 5/6 |\n
-| polyUb | Polyubiquitin | 7 | 53.2°C | 58.2°C | 121 bp | 7/7 | 6/7 |\n
+| Family | Description | Members | Forward (5'->3') | Reverse (5'->3') | Fwd GC | Rev GC | Product | FwdPos | RevPos | Region |
+|--------|------------|---------|-----------------|-----------------|--------|--------|---------|--------|--------|--------|
+| ACT | Actin | 2 | `ACTGGTGTGATGGTTGGCAT` | `GCCAGATCTTCTCCATGTCA` | 50.0% | 50.0% | 139 bp | 127 | 264 | CDS |
+| BTUB | Beta-tubulin | 2 | `TGCAGATGAGTGCATGGTTC` | `AGATCACCAAAGCTTGGGGT` | 50.0% | 50.0% | 90 bp | 585 | 673 | CDS |
+| GAPDH | GAPDH cytosolic | 2 | `ACTGGAGAGGTGGAAGAGCT` | `ATCAACAGTGGGAACACGGA` | 55.0% | 50.0% | 134 bp | 590 | 722 | CDS |
+| H3 | Histone H3 | 6 | `GCTCAGGACTTCAAGACTGA` | `TCCTTGGGCATGATTGTCAC` | 50.0% | 50.0% | 146 bp | 226 | 370 | CDS |
+| polyUb | Polyubiquitin | 7 | `ACAACATCCAGAAGGAGTCG` | `ATCGTGTCCGAGCTCTCCAC` | 50.0% | 60.0% | 121 bp | 656 | 775 | CDS |
 
 
 

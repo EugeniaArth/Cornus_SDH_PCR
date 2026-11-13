@@ -352,36 +352,41 @@ display: none;
 </div>
 
 
-<div id="familylevel-primer-pairs-for-qrtpcr-normalisation-cornus-sericea" class="section level1">
-<h1>Family‑Level Primer Pairs for qRT‑PCR Normalisation (Cornus
+<div id="family-level-primer-pairs-for-qrt-pcr-normalisation-cornus-sericea" class="section level1">
+<h1>Family-Level Primer Pairs for qRT-PCR Normalisation (Cornus
 sericea)</h1>
 <div id="overview" class="section level2">
 <h2>Overview</h2>
-<p>Six family‑level primer pairs designed to co‑amplify all paralogs of
-each reference‑gene family. Alongside the existing 14 variant‑specific
-pairs (GAPDH×2, EF‑1α×10, polyUb×2), these provide options for
-total‑family signal normalisation.</p>
-<table>
+<p>Six family-level primer pairs designed to co-amplify all paralogs of
+each reference-gene family. All primers are in the <strong>CDS</strong>
+region (derived from MAFFT codon alignment).</p>
+<table style="width:100%;">
 <colgroup>
-<col width="11%" />
-<col width="16%" />
-<col width="12%" />
-<col width="11%" />
-<col width="11%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
+<col width="7%" />
+<col width="10%" />
+<col width="8%" />
+<col width="15%" />
+<col width="15%" />
+<col width="7%" />
+<col width="7%" />
+<col width="8%" />
+<col width="7%" />
+<col width="7%" />
+<col width="7%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Family</th>
 <th>Description</th>
 <th>Members</th>
-<th>Fwd Tm</th>
-<th>Rev Tm</th>
+<th>Forward (5’-&gt;3’)</th>
+<th>Reverse (5’-&gt;3’)</th>
+<th>Fwd GC</th>
+<th>Rev GC</th>
 <th>Product</th>
-<th>Fwd cov</th>
-<th>Rev cov</th>
+<th>FwdPos</th>
+<th>RevPos</th>
+<th>Region</th>
 </tr>
 </thead>
 <tbody>
@@ -389,51 +394,66 @@ total‑family signal normalisation.</p>
 <td>ACT</td>
 <td>Actin</td>
 <td>2</td>
-<td>55.9°C</td>
-<td>53.1°C</td>
+<td><code>ACTGGTGTGATGGTTGGCAT</code></td>
+<td><code>GCCAGATCTTCTCCATGTCA</code></td>
+<td>50.0%</td>
+<td>50.0%</td>
 <td>139 bp</td>
-<td>2/2</td>
-<td>1/2</td>
+<td>127</td>
+<td>264</td>
+<td>CDS</td>
 </tr>
 <tr class="even">
 <td>BTUB</td>
 <td>Beta-tubulin</td>
 <td>2</td>
-<td>54.7°C</td>
-<td>54.6°C</td>
+<td><code>TGCAGATGAGTGCATGGTTC</code></td>
+<td><code>AGATCACCAAAGCTTGGGGT</code></td>
+<td>50.0%</td>
+<td>50.0%</td>
 <td>90 bp</td>
-<td>2/2</td>
-<td>1/2</td>
+<td>585</td>
+<td>673</td>
+<td>CDS</td>
 </tr>
 <tr class="odd">
 <td>GAPDH</td>
 <td>GAPDH cytosolic</td>
 <td>2</td>
-<td>55.9°C</td>
-<td>55.1°C</td>
+<td><code>ACTGGAGAGGTGGAAGAGCT</code></td>
+<td><code>ATCAACAGTGGGAACACGGA</code></td>
+<td>55.0%</td>
+<td>50.0%</td>
 <td>134 bp</td>
-<td>2/2</td>
-<td>1/2</td>
+<td>590</td>
+<td>722</td>
+<td>CDS</td>
 </tr>
 <tr class="even">
 <td>H3</td>
 <td>Histone H3</td>
 <td>6</td>
-<td>52.7°C</td>
-<td>54.0°C</td>
+<td><code>GCTCAGGACTTCAAGACTGA</code></td>
+<td><code>TCCTTGGGCATGATTGTCAC</code></td>
+<td>50.0%</td>
+<td>50.0%</td>
 <td>146 bp</td>
-<td>6/6</td>
-<td>5/6</td>
+<td>226</td>
+<td>370</td>
+<td>CDS</td>
 </tr>
 <tr class="odd">
 <td>polyUb</td>
 <td>Polyubiquitin</td>
 <td>7</td>
-<td>53.2°C</td>
-<td>58.2°C</td>
+<td><code>ACAACATCCAGAAGGAGTCG</code></td>
+<td><code>ATCGTGTCCGAGCTCTCCAC</code></td>
+<td>50.0%</td>
+<td>60.0%</td>
 <td>121 bp</td>
-<td>7/7</td>
-<td>6/7</td>
+<td>656</td>
+<td>775</td>
+<td>CDS</td>
 </tr>
 </tbody>
 </table>
@@ -459,122 +479,50 @@ TCCTTGGGCATGATTGTCAC
 &gt;polyUb_F
 ACAACATCCAGAAGGAGTCG
 &gt;polyUb_R
-ATCGTGTCCGAGCTCTCCAC</code></pre>
+ATCGTGTCCGAGCTCTCCAC
+</code></pre>
 </div>
 <div id="specificity-validation" class="section level2">
 <h2>Specificity Validation</h2>
-<p>Each pair was tested by <strong>exact 20‑mer scanning</strong> across
+<p>Each pair was tested by <strong>exact 20-mer scanning</strong> across
 the whole <em>Cornus</em> transcriptome (29,124 contigs):</p>
-</div>
-</div>
-<div id="family-level-primer-pairs-whole-transcriptome-specificity-scan" class="section level1">
-<h1>Family-level primer pairs — Whole-transcriptome specificity
-scan</h1>
-<div id="act" class="section level2">
-<h2>ACT</h2>
-<p>Forward: <code>ACTGGTGTGATGGTTGGCAT</code><br />
-Reverse: <code>GCCAGATCTTCTCCATGTCA</code></p>
-<p>Fwd exact sites: 3 contigs, Rev: 2 Family amplicons: 1
-NODE_19648_length_2181_cov_78.058630_g9247_i0: 139bp ✅ No foreign
-amplicons (exact match) ⚠ Unamplified family members (1): ACT_NODE_33831
-(node NODE_33831)</p>
-<p><strong>Interpretation</strong> Fwd exact sites: 3 contigs — the
-forward 20‑mer appears perfectly in 3 transcriptome contigs (2 family
-members + possibly 1 foreign) Family amplicons: 1 — only 1 family member
-has both forward and reverse at exact‑match stringency,<br />
-facing correctly, within the size window. That member is the reference
-sequence No foreign amplicons — zero off‑target contigs have an exact
-forward+reverse hit. Unamplified family members: N — the remaining
-family members have small sequence differences (≤2–5 mismatches) in the
-primer binding sites. They will still amplify in a normal PCR at
-50–55 °C annealing, because the mismatches are internal, not at the
-3′‑anchor. The exact‑match scan is intentionally strict — false
-negatives for near‑perfect matches are expected.</p>
-<hr />
-</div>
-<div id="btub" class="section level2">
-<h2>BTUB</h2>
-<p>Forward: <code>TGCAGATGAGTGCATGGTTC</code><br />
-Reverse: <code>AGATCACCAAAGCTTGGGGT</code></p>
-<p>Fwd exact sites: 4 contigs, Rev: 1 Family amplicons: 1
-NODE_23938_length_1973_cov_540.610187_g9818_i1: 90bp ✅ No foreign
-amplicons (exact match) ⚠ Unamplified family members (1):
-BTUB_NODE_24156 (node NODE_24156)</p>
-<hr />
-</div>
-<div id="gapdh" class="section level2">
-<h2>GAPDH</h2>
-<p>Forward: <code>ACTGGAGAGGTGGAAGAGCT</code><br />
-Reverse: <code>ATCAACAGTGGGAACACGGA</code></p>
-<p>Fwd exact sites: 2 contigs, Rev: 1 Family amplicons: 1
-NODE_10643_length_2809_cov_958.134058_g2667_i2: 134bp ✅ No foreign
-amplicons (exact match) ⚠ Unamplified family members (1):
-GAPDH_NODE_19071 (node NODE_19071)</p>
-<hr />
-</div>
-<div id="h3" class="section level2">
-<h2>H3</h2>
-<p>Forward: <code>GCTCAGGACTTCAAGACTGA</code><br />
-Reverse: <code>TCCTTGGGCATGATTGTCAC</code></p>
-<p>Fwd exact sites: 1 contigs, Rev: 1 Family amplicons: 1
-NODE_39897_length_1392_cov_4023.766195_g12629_i2: 146bp ✅ No foreign
-amplicons (exact match) ⚠ Unamplified family members (5): H3_NODE_69948
-(node NODE_69948) H3_NODE_63066 (node NODE_63066) H3_NODE_60621 (node
-NODE_60621) H3_NODE_60817 (node NODE_60817) H3_NODE_53397 (node
-NODE_53397)</p>
-<hr />
-</div>
-<div id="eif5a" class="section level2">
-<h2>eIF5A</h2>
-<hr />
-</div>
-<div id="polyub" class="section level2">
-<h2>polyUb</h2>
-<p>Forward: <code>ACAACATCCAGAAGGAGTCG</code><br />
-Reverse: <code>ATCGTGTCCGAGCTCTCCAC</code></p>
-<p>Fwd exact sites: 5 contigs, Rev: 3 Family amplicons: 1
-NODE_27696_length_1817_cov_1648.611991_g12754_i0: 121bp ✅ No foreign
-amplicons (exact match) ⚠ Unamplified family members (6):
-polyUb_NODE_31256 (node NODE_31256) polyUb_NODE_40207 (node NODE_40207)
-polyUb_NODE_28715 (node NODE_28715) polyUb_NODE_34465 (node NODE_34465)
-polyUb_NODE_30540 (node NODE_30540) polyUb_NODE_32737 (node
-NODE_32737)</p>
-<hr />
+<p><em>Scan report not available - run family_tx_scan.py first.</em></p>
 </div>
 <div id="design-method" class="section level2">
 <h2>Design Method</h2>
 <ol style="list-style-type: decimal">
-<li><strong>Target selection</strong>: Agrostemma githago Table S7
-sequences → BLASTn → keyword search → HMM validation (Pfam
+<li><strong>Target selection</strong>: Agrostemma githago Table S7
+sequences -&gt; BLASTn -&gt; keyword search -&gt; HMM validation (Pfam
 profiles).</li>
 <li><strong>Family candidates</strong>:
 <ul>
 <li>ACT: Actin (2 contigs)</li>
-<li>BTUB: β‑tubulin‑2, β‑tubulin‑8 (2 contigs)</li>
+<li>BTUB: Beta-tubulin-2, Beta-tubulin-8 (2 contigs)</li>
 <li>GAPDH: GAPDH cytosolic (2 contigs)</li>
-<li>H3: Histone H3.2 (×4), H3.3 (×2) (6 contigs)</li>
-<li>eIF5A: 2 contigs (HMM‑validated)</li>
-<li>polyUb: polyubiquitin Ubiquitinx6 (2 contigs)</li>
+<li>H3: Histone H3.2 (x4), H3.3 (x2) (6 contigs)</li>
+<li>eIF5A: 3 contigs (PF01287 validated)</li>
+<li>polyUb: polyubiquitin (7 contigs, architecture-validated)</li>
 </ul></li>
-<li><strong>Primer design</strong>: MAFFT protein alignment →
-codon‑level nucleotide alignment → conserved 20‑mer windows.</li>
-<li><strong>Coverance</strong>: each primer is allowed ≤2–5 mismatches
-on some family members (indel/codon‑shift tolerance).</li>
-<li><strong>Specificity</strong>: whole‑transcriptome exact‑site scan —
+<li><strong>Primer design</strong>: MAFFT protein alignment -&gt;
+codon-level nucleotide alignment -&gt; conserved 20-mer windows.</li>
+<li><strong>Coverage</strong>: each primer is allowed &lt;=5 mismatches
+on some family members (indel/codon-shift tolerance).</li>
+<li><strong>Specificity</strong>: whole-transcriptome exact-site scan -
 zero foreign amplicons required.</li>
 </ol>
 </div>
 <div id="usage-notes" class="section level2">
 <h2>Usage Notes</h2>
 <ul>
-<li><strong>Annealing temperature</strong>: 50–55 °C recommended (Tm
-range 48–58 °C).</li>
+<li><strong>Annealing temperature</strong>: 50-55 C recommended (Tm
+range 48-58 C).</li>
 <li><strong>Family coverage</strong>: each pair amplifies at least one
-family member exactly; other members amplify with ≤2–5 mismatches.
-Standard PCR stringency (50–55 °C) is sufficient for family‑level
-co‑amplification.</li>
-<li><strong>EF‑1α</strong>: A family‑level pair for all 10 EF‑1α
+family member exactly; other members amplify with &lt;=5
+mismatches.</li>
+<li><strong>EF-1a</strong>: A family-level pair for all 10 EF-1a
 paralogs was not feasible (too divergent).</li>
+<li><strong>eIF5A</strong>: Family-level pair was not feasible for eIF5A
+(3 members, too divergent for a single conserved pair).</li>
 </ul>
 </div>
 <div id="files" class="section level2">
@@ -593,29 +541,25 @@ paralogs was not feasible (too divergent).</li>
 <tbody>
 <tr class="odd">
 <td><code>data/results/FAMILY_primer_pairs.tsv</code></td>
-<td>All 6 primer pairs with Tm, GC, coverage</td>
+<td>All primer pairs with Tm, GC, positions, coverage</td>
 </tr>
 <tr class="even">
 <td><code>data/results/FAMILY_primers.fasta</code></td>
-<td>12 primer sequences (6 forward + 6 reverse)</td>
+<td>Primer sequences</td>
 </tr>
 <tr class="odd">
 <td><code>data/results/specificity/family_tx_scan_report.md</code></td>
-<td>Per‑pair specificity details</td>
+<td>Per-pair specificity details</td>
 </tr>
 <tr class="even">
 <td><code>family_candidates_filtered/</code></td>
-<td>Per‑family filtered contig FASTA files</td>
-</tr>
-<tr class="odd">
-<td><code>family_candidates/</code></td>
-<td>Unfiltered candidate sets</td>
+<td>Per-family filtered contig FASTA files</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><em>Generated 10 Nov 2026 for the Cornus sericea PCR project (DQD/SDH
-+ normalisation).</em></p>
+<p><em>Generated for the Cornus sericea PCR project (DQD/SDH +
+normalisation).</em></p>
 </div>
 </div>
 
