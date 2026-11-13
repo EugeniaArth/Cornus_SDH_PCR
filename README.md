@@ -44,6 +44,24 @@ All 20 nt. Sizes are spaced 60 bp apart so the six amplicons separate on 2 % aga
 GenBank records: PZ518666 (SDH1.1), PZ518667 (SDH1.2), PZ518668 (SDH2), PZ518669 (SDH3),
 PZ518670 (SDH4), PZ518671 (SDH5).
 
+##More detailed from report
+
+
+| Gene | Accession | Direction | Sequence (5'→3') | Region | Position | GC% | Tm(°C) | Amplicon bp |
+|---|---|---|---|---|---|---|---|---|
+| CserDQD/SDH1.1 | PZ518666 | F | GTTCACTGGTGGATTAAGTG | CDS | 1570-1589 | 45.0 | 49.5 | 120 |
+|  |  | R | ATAAGCACCTTACTTGAAGC | 3UTR | 1670-1689 | 40.0 | 48.6 |  |
+| CserDQD/SDH1.2 | PZ518667 | F | GCAAGCAGATTTCAGAGCTG | 3UTR | 2268-2287 | 50.0 | 53.1 | 180 |
+|  |  | R | ACTCAGCAACCCAATAGTGC | 3UTR | 2428-2447 | 50.0 | 54.0 |  |
+| CserDQD/SDH2 | PZ518668 | F | GCACTTCGATTAGCCATGGA | CDS | 492-511 | 50.0 | 54.0 | 240 |
+|  |  | R | TGCCACATCAGTGATATCCG | CDS | 712-731 | 50.0 | 54.0 |  |
+| CserDQD/SDH3 | PZ518669 | F | TGGAGCCGACATTGTGAAGA | CDS | 738-757 | 50.0 | 55.2 | 300 |
+|  |  | R | TGACCGACAGGCTTTCCAAT | CDS | 1018-1037 | 50.0 | 55.1 |  |
+| CserDQD/SDH4 | PZ518670 | F | AGAGGAAGCACTAGGAGGTT | CDS | 1216-1235 | 50.0 | 53.1 | 360 |
+|  |  | R | AAGAGTCTGGTCCATTTCGG | CDS | 1556-1575 | 50.0 | 52.8 |  |
+| CserDQD/SDH5 | PZ518671 | F | ACTTGCTCAGTCCATAGGTG | CDS | 1048-1067 | 50.0 | 53.0 | 420 |
+|  |  | R | ACCTCAGTCACAGGAATTCG | CDS | 1448-1467 | 50.0 | 53.2 |  |
+
 **Two things to know before ordering** (details in reports 04-06):
 
 * The SDH3 pair is specific at normal stringency but retains mismatch-tolerant sites on SDH4
@@ -92,7 +110,7 @@ Six family‑level primer pairs designed to co‑amplify all paralogs of each re
 - **polyUb** — Polyubiquitin (2 contigs, Ubiquitinx6)
 
 | Folder | Strategy | Pairs | Scope | Amplicons |
-| `housekeeping/` | **Family‑level** | 6 | total‑family signal | 90–151 bp |
+| housekeeping/ | **Family‑level** | 6 | total‑family signal | 90–151 bp |
 
 Scripts for housekeeping genes search are in scripts/step6_housekeeping folder 
 
@@ -141,8 +159,21 @@ Scripts for housekeeping genes search are in scripts/step6_housekeeping folder
 | H3 | GCTCAGGACTTCAAGACTGA | TCCTTGGGCATGATTGTCAC | 146 bp |
 | polyUb  | ACAACATCCAGAAGGAGTCG | ATCGTGTCCGAGCTCTCCAC | 121 bp |
 
-- **EF‑1α**: A family‑level pair for all 10 EF‑1α paralogs was not feasible (too divergent).
--**TEF1**: confirmed absent** in *C. sericea* (0 of 46 PF00009 GTP_EFTU hits classify as TEF1 by NR product)
+  - **EF‑1α**: A family‑level pair for all 10 EF‑1α paralogs was not feasible (too divergent)
+  - **TEF1**: confirmed absent** in *C. sericea* (0 of 46 PF00009 GTP_EFTU hits classify as TEF1 by NR product)
+
+
+## More detailed
+
+
+| Family | Description | Members | Fwd Tm | Rev Tm | Product | Fwd cov | Rev cov |
+|--------|------------|---------|--------|--------|---------|---------|---------|
+| ACT | Actin | 2 | 55.9°C | 53.1°C | 139 bp | 2/2 | 1/2 |\n
+| BTUB | Beta-tubulin | 2 | 54.7°C | 54.6°C | 90 bp | 2/2 | 1/2 |\n
+| GAPDH | GAPDH cytosolic | 2 | 55.9°C | 55.1°C | 134 bp | 2/2 | 1/2 |\n
+| H3 | Histone H3 | 6 | 52.7°C | 54.0°C | 146 bp | 6/6 | 5/6 |\n
+| polyUb | Polyubiquitin | 7 | 53.2°C | 58.2°C | 121 bp | 7/7 | 6/7 |\n
+
 
 
 ## Key Files

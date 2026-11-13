@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """
-Design one family‑level primer pair per family.
+step3_design/design_family_pairs.py — Design one family‑level primer pair per family.
 Uses real transcript sequences for hamming matching (tolerates codon indels).
 """
 import os, sys, math
 from collections import OrderedDict
-
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import paths as P
@@ -212,11 +211,12 @@ def main():
         results[fam] = design_for_family(fam, cds_all, tx_seqs)
     out = P.results('FAMILY_primer_pairs.tsv')
     with open(out, 'w') as f:
-        f.write("Family\tForward\tReverse\tProduct\tFwdTm\tRevTm\tFwdGC\tRevGC\tFwdCov\tRevCov\tTotal\n")
+        f.write("Family\tForward\tReverse\tProduct\tFwdTm\tRevTm\tFwdGC\tRevGC\tFwdPos\tRevPos\tFwdCov\tRevCov\tTotal\n")
         for fam in FAMILIES:
             b=results[fam]
             if b: f.write(f"{fam}\t{b['fwd_seq']}\t{b['rev_seq']}\t{b['product']}\t"
                           f"{b['fwd_tm']:.1f}\t{b['rev_tm']:.1f}\t{b['fwd_gc']:.1f}\t{b['rev_gc']:.1f}\t"
+                          f"{b['fwd_pos']}\t{b['rev_pos']}\t"
                           f"{b['fwd_cov']}\t{b['rev_cov']}\t{b['total']}\n")
     fa = P.results('FAMILY_primers.fasta')
     with open(fa, 'w') as f:

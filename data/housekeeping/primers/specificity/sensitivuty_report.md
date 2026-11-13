@@ -52,11 +52,11 @@ Reverse: `TCCTTGGGCATGATTGTCAC`
     NODE_39897_length_1392_cov_4023.766195_g12629_i2: 146bp
   ✅ No foreign amplicons (exact match)
   ⚠ Unamplified family members (5):
+    H3_NODE_60817 (node NODE_60817)
+    H3_NODE_53397 (node NODE_53397)
     H3_NODE_69948 (node NODE_69948)
     H3_NODE_63066 (node NODE_63066)
     H3_NODE_60621 (node NODE_60621)
-    H3_NODE_60817 (node NODE_60817)
-    H3_NODE_53397 (node NODE_53397)
 
 ---
 
@@ -76,12 +76,12 @@ Reverse: `ATCGTGTCCGAGCTCTCCAC`
     NODE_27696_length_1817_cov_1648.611991_g12754_i0: 121bp
   ✅ No foreign amplicons (exact match)
   ⚠ Unamplified family members (6):
-    polyUb_NODE_31256 (node NODE_31256)
-    polyUb_NODE_40207 (node NODE_40207)
-    polyUb_NODE_28715 (node NODE_28715)
-    polyUb_NODE_34465 (node NODE_34465)
     polyUb_NODE_30540 (node NODE_30540)
     polyUb_NODE_32737 (node NODE_32737)
+    polyUb_NODE_34465 (node NODE_34465)
+    polyUb_NODE_31256 (node NODE_31256)
+    polyUb_NODE_28715 (node NODE_28715)
+    polyUb_NODE_40207 (node NODE_40207)
 
 ---
 

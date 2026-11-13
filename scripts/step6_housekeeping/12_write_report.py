@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Write combined FAMILY_PRIMER_REPORT.md"""
-import os, sys, math
+"""Write combined FAMILY_PRIMER_REPORT.md with positions, GC%, and region."""
+import os, sys
 from collections import OrderedDict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -12,91 +12,88 @@ FAMILY_DESC = {
     'H3':'Histone H3','eIF5A':'eIF5A','polyUb':'Polyubiquitin'
 }
 
-report = """# Family‑Level Primer Pairs for qRT‑PCR Normalisation (Cornus sericea)
-
-## Overview
-
-Six family‑level primer pairs designed to co‑amplify all paralogs of each reference‑gene family.
-Alongside the existing 14 variant‑specific pairs (GAPDH×2, EF‑1α×10, polyUb×2), these provide
-options for total‑family signal normalisation.
-
-| Family | Description | Members | Fwd Tm | Rev Tm | Product | Fwd cov | Rev cov |
-|--------|------------|---------|--------|--------|---------|---------|---------|
-"""
+report = []
+report.append("# Family-Level Primer Pairs for qRT-PCR Normalisation (Cornus sericea)")
+report.append("")
+report.append("## Overview")
+report.append("")
+report.append("Six family-level primer pairs designed to co-amplify all paralogs of each reference-gene family.")
+report.append("All primers are in the **CDS** region (derived from MAFFT codon alignment).")
+report.append("")
+report.append("| Family | Description | Members | Forward (5'->3') | Reverse (5'->3') | Fwd GC | Rev GC | Product | FwdPos | RevPos | Region |")
+report.append("|--------|------------|---------|-----------------|-----------------|--------|--------|---------|--------|--------|--------|")
 
 with open(P.results('FAMILY_primer_pairs.tsv')) as f:
-    header = next(f)
+    next(f)
     for line in f:
         p = line.strip().split('\t')
         fam = p[0]
         if fam in FAMILIES:
-            fwd, rev, prod = p[1], p[2], p[3]
-            f_tm, r_tm = p[4], p[5]
-            f_cov, r_cov, tot = p[8], p[9], p[10]
-            report += f"| {fam} | {FAMILY_DESC[fam]} | {tot} | {f_tm}°C | {r_tm}°C | {prod} bp | {f_cov}/{tot} | {r_cov}/{tot} |\\n"
+            fwd, rev = p[1], p[2]
+            prod = p[3]
+            f_gc, r_gc = p[6], p[7]
+            f_pos, r_pos = p[8], p[9]
+            tot = p[12]
+            report.append(f"| {fam} | {FAMILY_DESC[fam]} | {tot} | `{fwd}` | `{rev}` | {f_gc}% | {r_gc}% | {prod} bp | {f_pos} | {r_pos} | CDS |")
 
-report += """
-## Primer Sequences
-
-```
-"""
+report.append("")
+report.append("## Primer Sequences")
+report.append("")
+report.append("```")
 
 with open(P.results('FAMILY_primers.fasta')) as f:
-    report += f.read()
+    report.append(f.read())
 
-report += """```
+report.append("```")
+report.append("")
+report.append("## Specificity Validation")
+report.append("")
+report.append("Each pair was tested by **exact 20-mer scanning** across the whole *Cornus* transcriptome (29,124 contigs):")
+report.append("")
 
-## Specificity Validation
-
-Each pair was tested by **exact 20‑mer scanning** across the whole *Cornus* transcriptome (29,124 contigs):
-
-"""
-# Read scan results
-scan_path = P.spec('sensitivuty_report.md')
+scan_path = P.spec('family_tx_scan_report.md')
 if os.path.exists(scan_path):
     with open(scan_path) as f:
-        report += f.read()
+        report.append(f.read())
 else:
-    report += "*Scan report not available — run family_tx_scan.py first.*\n"
+    report.append("*Scan report not available - run family_tx_scan.py first.*")
 
-report += """
-## Design Method
-
-1. **Target selection**: Agrostemma githago Table S7 sequences → BLASTn → keyword search → HMM validation (Pfam profiles).
-2. **Family candidates**:
-   - ACT: Actin (2 contigs)
-   - BTUB: β‑tubulin‑2, β‑tubulin‑8 (2 contigs)
-   - GAPDH: GAPDH cytosolic (2 contigs)
-   - H3: Histone H3.2 (×4), H3.3 (×2) (6 contigs)
-   - eIF5A: 2 contigs (HMM‑validated)
-   - polyUb: polyubiquitin Ubiquitinx6 (2 contigs)
-3. **Primer design**: MAFFT protein alignment → codon‑level nucleotide alignment → conserved 20‑mer windows.
-4. **Coverance**: each primer is allowed ≤2–5 mismatches on some family members (indel/codon‑shift tolerance).
-5. **Specificity**: whole‑transcriptome exact‑site scan — zero foreign amplicons required.
-
-## Usage Notes
-
-- **Annealing temperature**: 50–55 °C recommended (Tm range 48–58 °C).
-- **Family coverage**: each pair amplifies at least one family member exactly; other members amplify with ≤2–5 mismatches. Standard PCR stringency (50–55 °C) is sufficient for family‑level co‑amplification.
-- **EF‑1α**: A family‑level pair for all 10 EF‑1α paralogs was not feasible (too divergent). The existing 10 variant‑specific pairs are the recommended approach.
-- **Comparison with variant‑specific pairs**: The 14 variant‑specific pairs (Norm_PCR) offer paralog‑specific resolution; these family‑level pairs offer total‑family signal. Use either set, not both, for normalisation.
-
-## Files
-
-| File | Description |
-|------|-------------|
-| `data/results/FAMILY_primer_pairs.tsv` | All 6 primer pairs with Tm, GC, coverage |
-| `data/results/FAMILY_primers.fasta` | 12 primer sequences (6 forward + 6 reverse) |
-| `data/results/specificity/family_tx_scan_report.md` | Per‑pair specificity details |
-| `family_candidates_filtered/` | Per‑family filtered contig FASTA files |
-| `family_candidates/` | Unfiltered candidate sets |
-
----
-
-*Generated 10 Nov 2026 for the Cornus sericea PCR project (DQD/SDH + normalisation).*
-"""
+report.append("")
+report.append("## Design Method")
+report.append("")
+report.append("1. **Target selection**: Agrostemma githago Table S7 sequences -> BLASTn -> keyword search -> HMM validation (Pfam profiles).")
+report.append("2. **Family candidates**:")
+report.append("   - ACT: Actin (2 contigs)")
+report.append("   - BTUB: Beta-tubulin-2, Beta-tubulin-8 (2 contigs)")
+report.append("   - GAPDH: GAPDH cytosolic (2 contigs)")
+report.append("   - H3: Histone H3.2 (x4), H3.3 (x2) (6 contigs)")
+report.append("   - eIF5A: 3 contigs (PF01287 validated)")
+report.append("   - polyUb: polyubiquitin (7 contigs, architecture-validated)")
+report.append("3. **Primer design**: MAFFT protein alignment -> codon-level nucleotide alignment -> conserved 20-mer windows.")
+report.append("4. **Coverage**: each primer is allowed <=5 mismatches on some family members (indel/codon-shift tolerance).")
+report.append("5. **Specificity**: whole-transcriptome exact-site scan - zero foreign amplicons required.")
+report.append("")
+report.append("## Usage Notes")
+report.append("")
+report.append("- **Annealing temperature**: 50-55 C recommended (Tm range 48-58 C).")
+report.append("- **Family coverage**: each pair amplifies at least one family member exactly; other members amplify with <=5 mismatches.")
+report.append("- **EF-1a**: A family-level pair for all 10 EF-1a paralogs was not feasible (too divergent).")
+report.append("- **eIF5A**: Family-level pair was not feasible for eIF5A (3 members, too divergent for a single conserved pair).")
+report.append("")
+report.append("## Files")
+report.append("")
+report.append("| File | Description |")
+report.append("|------|-------------|")
+report.append("| `data/results/FAMILY_primer_pairs.tsv` | All primer pairs with Tm, GC, positions, coverage |")
+report.append("| `data/results/FAMILY_primers.fasta` | Primer sequences |")
+report.append("| `data/results/specificity/family_tx_scan_report.md` | Per-pair specificity details |")
+report.append("| `family_candidates_filtered/` | Per-family filtered contig FASTA files |")
+report.append("")
+report.append("---")
+report.append("")
+report.append("*Generated for the Cornus sericea PCR project (DQD/SDH + normalisation).*")
 
 out = P.results('FAMILY_PRIMER_REPORT.md')
 with open(out, 'w') as f:
-    f.write(report)
+    f.write('\n'.join(report))
 print(f"Report written to {out}")
