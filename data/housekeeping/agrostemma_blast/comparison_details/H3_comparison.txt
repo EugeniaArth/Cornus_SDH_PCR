@@ -1,0 +1,22 @@
+Family: H3
+BLAST hits: 0
+Keyword hits: 11
+Intersection: 0
+Union: 11
+
+=== Contigs in intersection ===
+
+=== Contigs only in BLAST ===
+
+=== Contigs only in keyword search ===
+NODE_29197_length_1761_cov_15.182827_g13396_i0
+NODE_33730_length_1597_cov_2765.946382_g15430_i0
+NODE_39897_length_1392_cov_4023.766195_g12629_i2
+NODE_44095_length_1262_cov_118.439406_g20262_i0
+NODE_50008_length_1086_cov_31.182257_g23380_i0
+NODE_53397_length_994_cov_1811.162963_g15731_i1
+NODE_60621_length_815_cov_632.157963_g30276_i0
+NODE_60817_length_810_cov_532.544021_g30423_i0
+NODE_63066_length_759_cov_701.432394_g32145_i0
+NODE_63392_length_752_cov_188.772404_g32398_i0
+NODE_69948_length_625_cov_309.848958_g38046_i0

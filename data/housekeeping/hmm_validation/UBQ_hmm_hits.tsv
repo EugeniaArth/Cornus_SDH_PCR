@@ -1,0 +1,55 @@
+contig	n_dom	coverage	spacing	kind	product
+NODE_11021_length_2776_cov_189.479648_g5383_i0	2	0.25	[76]	singleUb/fusion	Phosphatidylinositol 4-kinase gamma 3
+NODE_11122_length_2768_cov_183.803972_g5432_i0	1	0.22	[]	singleUb/fusion	BAG family molecular chaperone regulator 1
+NODE_11690_length_2716_cov_152.215598_g5697_i0	2	0.25	[76]	singleUb/fusion	Phosphatidylinositol 4-kinase gamma 4
+NODE_12462_length_2654_cov_155.001919_g6042_i0	2	0.25	[77]	singleUb/fusion	Phosphatidylinositol 4-kinase gamma 4
+NODE_12893_length_2621_cov_230.645412_g6242_i0	1	0.13	[]	singleUb/fusion	Ubiquitin domain-containing protein DSK2b
+NODE_15893_length_2402_cov_341.591160_g571_i1	1	0.13	[]	singleUb/fusion	Ubiquitin domain-containing protein DSK2b
+NODE_18713_length_2231_cov_361.979835_g5205_i1	1	0.18	[]	singleUb/fusion	Ubiquitin receptor RAD23c
+NODE_20592_length_2134_cov_155.982254_g8014_i2	1	0.21	[]	singleUb/fusion	BAG family molecular chaperone regulator 1
+NODE_21389_length_2096_cov_25.707377_g10011_i0	1	0.25	[]	singleUb/fusion	BAG family molecular chaperone regulator 1
+NODE_21441_length_2093_cov_229.857632_g10030_i0	1	0.16	[]	singleUb/fusion	XP_059660312.1 uncharacterized protein LOC132306772 [Cornus florida]
+NODE_21623_length_2084_cov_479.932187_g6561_i2	1	0.14	[]	singleUb/fusion	Ubiquitin carboxyl-terminal hydrolase 7
+NODE_24946_length_1930_cov_48.686869_g9674_i1	1	0.19	[]	singleUb/fusion	Ubiquitin receptor RAD23d
+NODE_27696_length_1817_cov_1648.611991_g12754_i0	5	0.94	[76, 76, 76, 76]	polyubiquitin	Polyubiquitin
+NODE_28144_length_1801_cov_570.082763_g10574_i2	1	0.17	[]	singleUb/fusion	Ubiquitin receptor RAD23c
+NODE_28715_length_1778_cov_1424.970503_g13204_i0	5	0.94	[76, 76, 76, 76]	polyubiquitin	Polyubiquitin
+NODE_29762_length_1739_cov_63.603550_g13220_i1	1	0.19	[]	singleUb/fusion	LRR repeats and ubiquitin-like domain-containing protein At2g30105
+NODE_30268_length_1720_cov_270.873728_g10269_i4	1	0.18	[]	singleUb/fusion	Protein DNA-DAMAGE INDUCIBLE 1
+NODE_30540_length_1710_cov_16320.173390_g14002_i0	5	0.94	[76, 76, 76, 76]	polyubiquitin	Polyubiquitin
+NODE_31191_length_1687_cov_289.449328_g7660_i1	1	0.2	[]	singleUb/fusion	Ubiquitin receptor RAD23b
+NODE_31256_length_1685_cov_142.812347_g14326_i0	5	0.78	[74, 77, 73, 73]	polyubiquitin	Polyubiquitin
+NODE_31412_length_1680_cov_12.937462_g14395_i0	4	0.72	[74, 76, 74]	polyubiquitin	Polyubiquitin (Fragment)
+NODE_32025_length_1657_cov_276.667289_g1516_i3	1	0.13	[]	singleUb/fusion	Ubiquitin domain-containing protein DSK2b
+NODE_32737_length_1631_cov_360.464602_g14995_i0	6	0.87	[76, 76, 76, 76, 76]	polyubiquitin	Polyubiquitin
+NODE_33910_length_1590_cov_353.295263_g8863_i2	1	0.74	[]	singleUb/fusion	Small ubiquitin-related modifier 1
+NODE_34465_length_1571_cov_4544.060447_g11248_i2	5	0.84	[76, 76, 76, 76]	polyubiquitin	Polyubiquitin
+NODE_36068_length_1517_cov_697.857629_g16432_i0	2	0.93	[76]	polyubiquitin	Ubiquitin-NEDD8-like protein RUB1
+NODE_38234_length_1446_cov_28.372226_g17446_i0	1	0.3	[]	singleUb/fusion	BAG family molecular chaperone regulator 4
+NODE_38635_length_1433_cov_2316.104046_g17618_i0	4	0.94	[76, 76, 76]	polyubiquitin	Polyubiquitin (Fragment)
+NODE_39742_length_1398_cov_355.910304_g14213_i1	1	0.22	[]	singleUb/fusion	Ubiquitin-like domain-containing CTD phosphatase
+NODE_40207_length_1381_cov_1448.836336_g14875_i2	5	0.8	[76, 76, 76, 76]	polyubiquitin	Polyubiquitin
+NODE_43628_length_1275_cov_293.643556_g20030_i0	1	0.27	[]	singleUb/fusion	BAG family molecular chaperone regulator 2
+NODE_44600_length_1247_cov_636.883973_g20510_i0	1	0.73	[]	singleUb/fusion	Small ubiquitin-related modifier 2
+NODE_45641_length_1215_cov_633.473413_g16925_i1	2	0.92	[76]	polyubiquitin	Ubiquitin-NEDD8-like protein RUB1
+NODE_49946_length_1087_cov_259.983622_g23207_i1	1	0.57	[]	singleUb/fusion	Small ubiquitin-related modifier 2
+NODE_50400_length_1075_cov_81.334308_g21388_i1	1	0.33	[]	singleUb/fusion	XP_059643647.1 uncharacterized protein LOC132285473 [Cornus florida]
+NODE_5443_length_3504_cov_200.533430_g398_i1	1	0.07	[]	singleUb/fusion	Ubiquitin-like domain-containing protein CIP73
+NODE_5464_length_3501_cov_127.212051_g2726_i0	1	0.07	[]	singleUb/fusion	Protein STABILIZED1
+NODE_548_length_6152_cov_48.633131_g97_i1	1	0.04	[]	singleUb/fusion	Transcription initiation factor TFIID subunit 1
+NODE_54988_length_953_cov_204.388274_g26356_i0	1	0.71	[]	singleUb/fusion	XP_059635974.1 polyubiquitin 9 isoform X1 [Cornus florida]
+NODE_55138_length_949_cov_782.843333_g23128_i1	1	0.51	[]	singleUb/fusion	Ubiquitin-ribosomal protein eL40 fusion protein
+NODE_55233_length_948_cov_1.812013_g26517_i0	2	0.57	[84]	multiUb	Polyubiquitin (Fragment)
+NODE_56345_length_918_cov_2214.281933_g27255_i0	1	0.46	[]	singleUb/fusion	Ubiquitin-ribosomal protein eS31 fusion protein
+NODE_57837_length_881_cov_1402.335337_g28305_i0	1	0.56	[]	singleUb/fusion	Ubiquitin-ribosomal protein eL40 fusion protein
+NODE_58673_length_860_cov_85.849568_g28873_i0	1	0.44	[]	singleUb/fusion	BAG family molecular chaperone regulator 2
+NODE_59521_length_839_cov_1492.755696_g29464_i0	1	0.46	[]	singleUb/fusion	Ubiquitin-ribosomal protein eS31 fusion protein
+NODE_62534_length_771_cov_945.271468_g1749_i1	1	0.73	[]	singleUb/fusion	Small ubiquitin-related modifier 2
+NODE_62712_length_767_cov_3047.445682_g31861_i0	1	0.46	[]	singleUb/fusion	Ubiquitin-ribosomal protein eS31 fusion protein
+NODE_63731_length_745_cov_1210.834770_g32674_i0	2	0.85	[76]	polyubiquitin	Polyubiquitin (Fragment)
+NODE_63832_length_743_cov_2833.184438_g30821_i1	1	0.56	[]	singleUb/fusion	Ubiquitin-ribosomal protein eL40 fusion protein
+NODE_7710_length_3150_cov_178.721703_g3815_i0	1	0.08	[]	singleUb/fusion	E3 ubiquitin-protein ligase UPL5
+NODE_7841_length_3131_cov_252.178456_g3878_i0	1	0.1	[]	singleUb/fusion	Probable splicing factor 3A subunit 1
+NODE_83233_length_446_cov_24.098237_g50867_i0	1	0.75	[]	singleUb/fusion	XP_059664474.1 uncharacterized protein LOC132310308 [Cornus florida]
+NODE_8745_length_3013_cov_195.032389_g3288_i2	1	0.1	[]	singleUb/fusion	Ubiquitin-like domain-containing protein CIP73
+NODE_9659_length_2906_cov_21.974799_g4722_i0	2	0.25	[76]	singleUb/fusion	Phosphatidylinositol 4-kinase gamma 4

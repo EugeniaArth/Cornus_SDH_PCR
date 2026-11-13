@@ -1,0 +1,11 @@
+Family	BlastHits	KeywordHits	Intersection	Union	BlastOnly	KeywordOnly
+ACT	2	155	2	155	0	153
+BAS	0	0	0	0	0	0
+BTUB	3	32	2	33	1	30
+EF1a	4	26	4	26	0	22
+GAPDH	2	7	2	7	0	5
+H3	0	11	0	11	0	11
+SQS	0	0	0	0	0	0
+TEF1	0	12	0	12	0	12
+UBQ	0	472	0	472	0	472
+eIF5A	0	3	0	3	0	3

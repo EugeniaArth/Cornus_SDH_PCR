@@ -1,0 +1,23 @@
+Family: TEF1
+BLAST hits: 0
+Keyword hits: 12
+Intersection: 0
+Union: 12
+
+=== Contigs in intersection ===
+
+=== Contigs only in BLAST ===
+
+=== Contigs only in keyword search ===
+NODE_12049_length_2687_cov_48.741092_g5856_i0
+NODE_15669_length_2418_cov_11.002955_g7480_i0
+NODE_20746_length_2127_cov_9.090953_g9714_i0
+NODE_21746_length_2078_cov_137.641695_g10158_i0
+NODE_25561_length_1903_cov_54.217907_g11828_i0
+NODE_32986_length_1623_cov_84.301779_g15103_i0
+NODE_43241_length_1288_cov_77.563358_g14151_i1
+NODE_51060_length_1057_cov_45.682540_g23956_i0
+NODE_62598_length_770_cov_54.968100_g31765_i0
+NODE_79542_length_486_cov_1.972540_g47201_i0
+NODE_87398_length_409_cov_2.300000_g55024_i0
+NODE_8898_length_2995_cov_19.334352_g4367_i0

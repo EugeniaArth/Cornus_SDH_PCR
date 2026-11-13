@@ -1,0 +1,11 @@
+Family: SQS
+BLAST hits: 0
+Keyword hits: 0
+Intersection: 0
+Union: 0
+
+=== Contigs in intersection ===
+
+=== Contigs only in BLAST ===
+
+=== Contigs only in keyword search ===

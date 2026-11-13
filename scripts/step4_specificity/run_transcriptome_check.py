@@ -3,10 +3,9 @@
 Whole-transcriptome (genome-wide) off-target check for the final Cornus DQD/SDH
 primer set.  Runs fully LOCALLY with blastn; nothing is uploaded.
 
-Template: Transcriptome/final.clust_transcripts_longest_iso.fasta (29,124 Trinity
+Template: data/external/transcriptome.fasta (29,124 Trinity
           transcripts, ~48 MB) - the annotated, clustered transcript assembly
-          whose IDs match Transcriptome/final.clust_annotation_longest_iso.gff3
-          and ./annotated_final_nr.gff3.
+          whose IDs match data/external/transcriptome.gff3
 
 Steps
   0. makeblastdb on the transcriptome (DB written inside primer_blast_check/).

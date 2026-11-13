@@ -1,0 +1,11 @@
+Agrostemma githago sequences extracted from Table S7
+============================================================
+ACT: 6 sequences
+BTUB: 5 sequences
+EF1a: 4 sequences
+GAPDH: 3 sequences
+H3: 16 sequences
+TEF1: 8 sequences
+eIF5A: 4 sequences
+SQS: 3 sequences
+BAS: 8 sequences

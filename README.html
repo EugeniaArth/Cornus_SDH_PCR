@@ -361,6 +361,9 @@ genes</h1>
 the <em>C. sericea</em> transcriptome and checked for specificity
 entirely locally.</p>
 <p><strong>Deliverables</strong></p>
+<p>NB!!! The transcriptome-wide work reads the assembly needs to be
+downloaded from <a href="https://drive.google.com/drive/folders/1aDozkY-kDjnAsJzh3PdtklgKbpfJFE5D?usp=sharing" class="uri">https://drive.google.com/drive/folders/1aDozkY-kDjnAsJzh3PdtklgKbpfJFE5D?usp=sharing</a>
+to folder <code>data/external/</code>, which is not committed</p>
 <table>
 <colgroup>
 <col width="50%" />
@@ -517,12 +520,6 @@ A 314 bp SDH1.2 band can appear in the tube.</li>
 <pre class="sh"><code>python3 -m pip install numpy            # the only non-stdlib requirement
 ./scripts/run_all.sh --no-tx            # stages 1-4 on committed data (Checks 1 and 4)
 ./scripts/run_all.sh                    # adds stage 5 and the transcriptome-wide Checks 2, 3, 3b</code></pre>
-<p>The transcriptome-wide work reads the assembly from
-<code>data/external/</code>, which is not committed, so a fresh clone
-needs those files placed there first — see
-<code>data/external/README.md</code> for names and symlink commands.
-Those scripts stop with a clear message when a file is absent instead of
-producing a partial result.</p>
 <p>Runs 1-4 of the pipeline need only what is committed in
 <code>data/raw/</code>. Each script also works on its own; they are in
 <code>scripts/step1_inputs/</code> …
@@ -535,8 +532,8 @@ be moved or cloned anywhere without editing paths.</p>
 <h2>Reproducing the deliverable</h2>
 <p><code>design_final_pairs.py</code> regenerates
 <code>FINAL_primers.fasta</code> and <code>FINAL_primer_pairs.tsv</code>
-byte for byte from <code>data/raw/DQD_SDH_possible_nt.fasta</code> plus
-the verified coordinate table. That was confirmed after the project was
+byte for byte from <code>data/raw/Cornus_DQD_SDHs.fasta</code> plus the
+verified coordinate table. That was confirmed after the project was
 restructured: the regenerated primers hash identically to the committed
 ones, and 22 of the 26 specificity evidence files do as well (report 07
 lists the exceptions and why).</p>
@@ -547,18 +544,6 @@ lists the exceptions and why).</p>
 <li>48 MB transcriptome FASTA and GFF3 annotation, and the BLAST
 databases built from them (<code>data/external/</code>,
 gitignored).</li>
-<li>Vector-screening work for the NCBI submission — that is a separate
-task with its own tools and outputs, kept in the sibling
-<code>vector_work/</code> directory.</li>
-<li>Photos, InterProScan output and literature spreadsheets, kept in the
-sibling <code>reference/</code>.</li>
-<li>Superseded material: <code>archive/</code> inside this folder
-(redundant duplicates, gitignored) and
-<code>PCR_SDH/archive/old_layout_20261102/</code> outside it (the
-pre-repository layout, with a manifest mapping every file to its
-replacement here). Earlier rounds remain in
-<code>PCR_SDH/backup/</code>. Nothing was deleted during the
-reorganisation.</li>
 </ul>
 </div>
 </div>

@@ -1,0 +1,34 @@
+Family	Description	ContigID	Source
+EF1a	Elongation factor 1‑alpha	NODE_15213_length_2448_cov_84.235098_g7282_i0	HMM+NR
+EF1a	Elongation factor 1‑alpha	NODE_16779_length_2346_cov_112.272529_g6682_i1	HMM+NR
+EF1a	Elongation factor 1‑alpha	NODE_18779_length_2228_cov_406.409821_g8226_i1	HMM+NR
+EF1a	Elongation factor 1‑alpha	NODE_22822_length_2027_cov_447.697674_g10637_i0	HMM+NR
+EF1a	Elongation factor 1‑alpha	NODE_25025_length_1926_cov_2376.927544_g9682_i1	HMM+NR
+EF1a	Elongation factor 1‑alpha	NODE_25106_length_1922_cov_402.809931_g11623_i0	HMM+NR
+EF1a	Elongation factor 1‑alpha	NODE_26674_length_1858_cov_391.308458_g12320_i0	HMM+NR
+EF1a	Elongation factor 1‑alpha	NODE_26996_length_1845_cov_2241.225501_g6372_i1	HMM+NR
+EF1a	Elongation factor 1‑alpha	NODE_27894_length_1810_cov_321.861442_g5609_i1	HMM+NR
+EF1a	Elongation factor 1‑alpha	NODE_5275_length_3536_cov_5178.433611_g2630_i0	HMM+NR
+GAPDH	Glyceraldehyde‑3‑phosphate dehydrogenase	NODE_10643_length_2809_cov_958.134058_g2667_i2	HMM+NR
+GAPDH	Glyceraldehyde‑3‑phosphate dehydrogenase	NODE_19071_length_2212_cov_4499.645400_g3603_i3	HMM+NR
+polyUb	Polyubiquitin	NODE_31256_length_1685_cov_142.812347_g14326_i0	HMM+NR
+polyUb	Polyubiquitin	NODE_32737_length_1631_cov_360.464602_g14995_i0	HMM+NR
+ACT	Actin	NODE_19648_length_2181_cov_78.058630_g9247_i0	BLAST
+ACT	Actin	NODE_33831_length_1593_cov_726.832902_g10573_i1	BLAST
+BTUB	Beta‑tubulin	NODE_23938_length_1973_cov_540.610187_g9818_i1	BLAST
+BTUB	Beta‑tubulin	NODE_24156_length_1963_cov_264.541275_g9334_i1	BLAST
+BTUB	Beta‑tubulin	NODE_903_length_5512_cov_73.338093_g441_i0	BLAST
+H3	Histone H3	NODE_29197_length_1761_cov_15.182827_g13396_i0	keyword
+H3	Histone H3	NODE_33730_length_1597_cov_2765.946382_g15430_i0	keyword
+H3	Histone H3	NODE_39897_length_1392_cov_4023.766195_g12629_i2	keyword
+H3	Histone H3	NODE_44095_length_1262_cov_118.439406_g20262_i0	keyword
+H3	Histone H3	NODE_50008_length_1086_cov_31.182257_g23380_i0	keyword
+H3	Histone H3	NODE_53397_length_994_cov_1811.162963_g15731_i1	keyword
+H3	Histone H3	NODE_60621_length_815_cov_632.157963_g30276_i0	keyword
+H3	Histone H3	NODE_60817_length_810_cov_532.544021_g30423_i0	keyword
+H3	Histone H3	NODE_63066_length_759_cov_701.432394_g32145_i0	keyword
+H3	Histone H3	NODE_63392_length_752_cov_188.772404_g32398_i0	keyword
+H3	Histone H3	NODE_69948_length_625_cov_309.848958_g38046_i0	keyword
+eIF5A	Eukaryotic translation initiation factor 5A	NODE_39166_length_1416_cov_4264.255304_g17868_i0	keyword
+eIF5A	Eukaryotic translation initiation factor 5A	NODE_50859_length_1062_cov_1528.604146_g3934_i1	keyword
+eIF5A	Eukaryotic translation initiation factor 5A	NODE_53930_length_980_cov_1766.262084_g13316_i2	keyword
